@@ -31,7 +31,7 @@
             this.danhMucPhongButton = new System.Windows.Forms.Button();
             this.btnPhieuThuePhong = new System.Windows.Forms.Button();
             this.btnTraCuu = new System.Windows.Forms.Button();
-            this.btnLapHoaDon = new System.Windows.Forms.Button();
+            this.btnHoaDonThanhToan = new System.Windows.Forms.Button();
             this.btnLapBaoCaoThang = new System.Windows.Forms.Button();
             this.btnThayDoiQuyDinh = new System.Windows.Forms.Button();
             this.danhSachPhongButton = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@
             // 
             // btnPhieuThuePhong
             // 
-            this.btnPhieuThuePhong.Location = new System.Drawing.Point(49, 74);
+            this.btnPhieuThuePhong.Location = new System.Drawing.Point(49, 86);
             this.btnPhieuThuePhong.Name = "btnPhieuThuePhong";
             this.btnPhieuThuePhong.Size = new System.Drawing.Size(144, 23);
             this.btnPhieuThuePhong.TabIndex = 1;
@@ -59,25 +59,26 @@
             // 
             // btnTraCuu
             // 
-            this.btnTraCuu.Location = new System.Drawing.Point(49, 115);
+            this.btnTraCuu.Location = new System.Drawing.Point(49, 197);
             this.btnTraCuu.Name = "btnTraCuu";
             this.btnTraCuu.Size = new System.Drawing.Size(144, 23);
             this.btnTraCuu.TabIndex = 2;
             this.btnTraCuu.Text = "Tra Cứu";
             this.btnTraCuu.UseVisualStyleBackColor = true;
             // 
-            // btnLapHoaDon
+            // btnHoaDonThanhToan
             // 
-            this.btnLapHoaDon.Location = new System.Drawing.Point(49, 144);
-            this.btnLapHoaDon.Name = "btnLapHoaDon";
-            this.btnLapHoaDon.Size = new System.Drawing.Size(144, 23);
-            this.btnLapHoaDon.TabIndex = 3;
-            this.btnLapHoaDon.Text = "Lập Hóa Đơn";
-            this.btnLapHoaDon.UseVisualStyleBackColor = true;
+            this.btnHoaDonThanhToan.Location = new System.Drawing.Point(49, 127);
+            this.btnHoaDonThanhToan.Name = "btnHoaDonThanhToan";
+            this.btnHoaDonThanhToan.Size = new System.Drawing.Size(144, 23);
+            this.btnHoaDonThanhToan.TabIndex = 3;
+            this.btnHoaDonThanhToan.Text = "Hóa Đơn Thanh Toán";
+            this.btnHoaDonThanhToan.UseVisualStyleBackColor = true;
+            this.btnHoaDonThanhToan.Click += new System.EventHandler(this.btnLapHoaDon_Click);
             // 
             // btnLapBaoCaoThang
             // 
-            this.btnLapBaoCaoThang.Location = new System.Drawing.Point(49, 188);
+            this.btnLapBaoCaoThang.Location = new System.Drawing.Point(49, 168);
             this.btnLapBaoCaoThang.Name = "btnLapBaoCaoThang";
             this.btnLapBaoCaoThang.Size = new System.Drawing.Size(144, 23);
             this.btnLapBaoCaoThang.TabIndex = 4;
@@ -111,7 +112,7 @@
             this.Controls.Add(this.danhSachPhongButton);
             this.Controls.Add(this.btnThayDoiQuyDinh);
             this.Controls.Add(this.btnLapBaoCaoThang);
-            this.Controls.Add(this.btnLapHoaDon);
+            this.Controls.Add(this.btnHoaDonThanhToan);
             this.Controls.Add(this.btnTraCuu);
             this.Controls.Add(this.btnPhieuThuePhong);
             this.Controls.Add(this.danhMucPhongButton);
@@ -126,7 +127,7 @@
         private System.Windows.Forms.Button danhMucPhongButton;
         private System.Windows.Forms.Button btnPhieuThuePhong;
         private System.Windows.Forms.Button btnTraCuu;
-        private System.Windows.Forms.Button btnLapHoaDon;
+        private System.Windows.Forms.Button btnHoaDonThanhToan;
         private System.Windows.Forms.Button btnLapBaoCaoThang;
         private System.Windows.Forms.Button btnThayDoiQuyDinh;
         private System.Windows.Forms.Button danhSachPhongButton;

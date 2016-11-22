@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hóa Đơn Thanh Toán.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hóa Đơn Thanh Toán.Designer.cs">
+      <DependentUpon>Hóa Đơn Thanh Toán.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoaiPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Hóa Đơn Thanh Toán.resx">
+      <DependentUpon>Hóa Đơn Thanh Toán.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoaiPhong.resx">
       <DependentUpon>LoaiPhong.cs</DependentUpon>
     </EmbeddedResource>
