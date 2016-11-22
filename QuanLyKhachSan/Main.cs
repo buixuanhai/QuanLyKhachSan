@@ -45,6 +45,11 @@ namespace QuanLyKhachSan
         {
             new HoaDonThanhToan().Show();
         }
+
+        private void btnLapBaoCaoThang_Click(object sender, EventArgs e)
+        {
+            new BaoCaoDoanhThu().Show();
+        }
     }
 
     }

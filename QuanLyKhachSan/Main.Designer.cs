@@ -32,7 +32,7 @@
             this.btnPhieuThuePhong = new System.Windows.Forms.Button();
             this.btnTraCuu = new System.Windows.Forms.Button();
             this.btnHoaDonThanhToan = new System.Windows.Forms.Button();
-            this.btnLapBaoCaoThang = new System.Windows.Forms.Button();
+            this.baoCaoDoanhThuButton = new System.Windows.Forms.Button();
             this.btnThayDoiQuyDinh = new System.Windows.Forms.Button();
             this.danhSachPhongButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -76,14 +76,15 @@
             this.btnHoaDonThanhToan.UseVisualStyleBackColor = true;
             this.btnHoaDonThanhToan.Click += new System.EventHandler(this.btnLapHoaDon_Click);
             // 
-            // btnLapBaoCaoThang
+            // baoCaoDoanhThuButton
             // 
-            this.btnLapBaoCaoThang.Location = new System.Drawing.Point(49, 168);
-            this.btnLapBaoCaoThang.Name = "btnLapBaoCaoThang";
-            this.btnLapBaoCaoThang.Size = new System.Drawing.Size(144, 23);
-            this.btnLapBaoCaoThang.TabIndex = 4;
-            this.btnLapBaoCaoThang.Text = "Lập Báo Cáo Tháng";
-            this.btnLapBaoCaoThang.UseVisualStyleBackColor = true;
+            this.baoCaoDoanhThuButton.Location = new System.Drawing.Point(49, 168);
+            this.baoCaoDoanhThuButton.Name = "baoCaoDoanhThuButton";
+            this.baoCaoDoanhThuButton.Size = new System.Drawing.Size(144, 23);
+            this.baoCaoDoanhThuButton.TabIndex = 4;
+            this.baoCaoDoanhThuButton.Text = "Báo Cáo Doanh Thu";
+            this.baoCaoDoanhThuButton.UseVisualStyleBackColor = true;
+            this.baoCaoDoanhThuButton.Click += new System.EventHandler(this.btnLapBaoCaoThang_Click);
             // 
             // btnThayDoiQuyDinh
             // 
@@ -111,7 +112,7 @@
             this.ClientSize = new System.Drawing.Size(623, 261);
             this.Controls.Add(this.danhSachPhongButton);
             this.Controls.Add(this.btnThayDoiQuyDinh);
-            this.Controls.Add(this.btnLapBaoCaoThang);
+            this.Controls.Add(this.baoCaoDoanhThuButton);
             this.Controls.Add(this.btnHoaDonThanhToan);
             this.Controls.Add(this.btnTraCuu);
             this.Controls.Add(this.btnPhieuThuePhong);
@@ -128,7 +129,7 @@
         private System.Windows.Forms.Button btnPhieuThuePhong;
         private System.Windows.Forms.Button btnTraCuu;
         private System.Windows.Forms.Button btnHoaDonThanhToan;
-        private System.Windows.Forms.Button btnLapBaoCaoThang;
+        private System.Windows.Forms.Button baoCaoDoanhThuButton;
         private System.Windows.Forms.Button btnThayDoiQuyDinh;
         private System.Windows.Forms.Button danhSachPhongButton;
     }
