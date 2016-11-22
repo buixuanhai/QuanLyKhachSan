@@ -29,7 +29,7 @@ namespace QuanLyKhachSan
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboBox2.SelectedIndex = comboBox1.SelectedIndex;
+            
         }
 
         private void Form2_Load(object sender, EventArgs e)

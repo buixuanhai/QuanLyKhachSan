@@ -28,7 +28,7 @@ namespace QuanLyKhachSan
         private void button1_Click(object sender, EventArgs e)
         {
             {
-                Form form2 = new Form2();
+                Form form2 = new DanhMucPhong();
                 form2.Show();
             }
             //this.Close();
