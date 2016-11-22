@@ -28,24 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.soPhongTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.loaiPhongcomboBox = new System.Windows.Forms.ComboBox();
+            this.xoaButton = new System.Windows.Forms.Button();
+            this.luuButton = new System.Windows.Forms.Button();
+            this.suaButton = new System.Windows.Forms.Button();
+            this.themButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.donGiacomboBox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tinhTrangtextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // soPhongTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(71, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.soPhongTextBox.Location = new System.Drawing.Point(83, 28);
+            this.soPhongTextBox.Name = "soPhongTextBox";
+            this.soPhongTextBox.Size = new System.Drawing.Size(100, 20);
+            this.soPhongTextBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -59,7 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 71);
+            this.label2.Location = new System.Drawing.Point(6, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 2;
@@ -73,66 +77,114 @@
             this.dataGridView1.Size = new System.Drawing.Size(285, 161);
             this.dataGridView1.TabIndex = 4;
             // 
-            // comboBox1
+            // loaiPhongcomboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(83, 71);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
+            this.loaiPhongcomboBox.FormattingEnabled = true;
+            this.loaiPhongcomboBox.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C"});
+            this.loaiPhongcomboBox.Location = new System.Drawing.Point(82, 63);
+            this.loaiPhongcomboBox.Name = "loaiPhongcomboBox";
+            this.loaiPhongcomboBox.Size = new System.Drawing.Size(121, 21);
+            this.loaiPhongcomboBox.TabIndex = 5;
             // 
-            // button1
+            // xoaButton
             // 
-            this.button1.Location = new System.Drawing.Point(238, 198);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.xoaButton.Location = new System.Drawing.Point(285, 194);
+            this.xoaButton.Name = "xoaButton";
+            this.xoaButton.Size = new System.Drawing.Size(75, 23);
+            this.xoaButton.TabIndex = 6;
+            this.xoaButton.Text = "Xóa";
+            this.xoaButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // luuButton
             // 
-            this.button2.Location = new System.Drawing.Point(431, 198);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.luuButton.Location = new System.Drawing.Point(447, 194);
+            this.luuButton.Name = "luuButton";
+            this.luuButton.Size = new System.Drawing.Size(75, 23);
+            this.luuButton.TabIndex = 7;
+            this.luuButton.Text = "Lưu";
+            this.luuButton.UseVisualStyleBackColor = true;
+            this.luuButton.Click += new System.EventHandler(this.luuButton_Click);
             // 
-            // button3
+            // suaButton
             // 
-            this.button3.Location = new System.Drawing.Point(319, 198);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.suaButton.Location = new System.Drawing.Point(366, 194);
+            this.suaButton.Name = "suaButton";
+            this.suaButton.Size = new System.Drawing.Size(75, 23);
+            this.suaButton.TabIndex = 8;
+            this.suaButton.Text = "Sửa";
+            this.suaButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // themButton
             // 
-            this.button4.Location = new System.Drawing.Point(71, 98);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.themButton.Location = new System.Drawing.Point(83, 194);
+            this.themButton.Name = "themButton";
+            this.themButton.Size = new System.Drawing.Size(75, 23);
+            this.themButton.TabIndex = 9;
+            this.themButton.Text = "Thêm";
+            this.themButton.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 103);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Đơn giá";
+            // 
+            // donGiacomboBox
+            // 
+            this.donGiacomboBox.FormattingEnabled = true;
+            this.donGiacomboBox.Items.AddRange(new object[] {
+            "150 000",
+            "170 000",
+            "200 000"});
+            this.donGiacomboBox.Location = new System.Drawing.Point(83, 103);
+            this.donGiacomboBox.Name = "donGiacomboBox";
+            this.donGiacomboBox.Size = new System.Drawing.Size(121, 21);
+            this.donGiacomboBox.TabIndex = 11;
+            this.donGiacomboBox.SelectedIndexChanged += new System.EventHandler(this.donGiacomboBox_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(2, 138);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Tình trạng";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // tinhTrangtextBox
+            // 
+            this.tinhTrangtextBox.Location = new System.Drawing.Point(82, 135);
+            this.tinhTrangtextBox.Name = "tinhTrangtextBox";
+            this.tinhTrangtextBox.Size = new System.Drawing.Size(122, 20);
+            this.tinhTrangtextBox.TabIndex = 13;
             // 
             // DanhSachPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 261);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.tinhTrangtextBox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.donGiacomboBox);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.themButton);
+            this.Controls.Add(this.suaButton);
+            this.Controls.Add(this.luuButton);
+            this.Controls.Add(this.xoaButton);
+            this.Controls.Add(this.loaiPhongcomboBox);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.soPhongTextBox);
             this.Name = "DanhSachPhong";
-            this.Text = "Form3";
+            this.Text = "Danh sách phòng";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -141,14 +193,18 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox soPhongTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox loaiPhongcomboBox;
+        private System.Windows.Forms.Button xoaButton;
+        private System.Windows.Forms.Button luuButton;
+        private System.Windows.Forms.Button suaButton;
+        private System.Windows.Forms.Button themButton;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox donGiacomboBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tinhTrangtextBox;
     }
 }
