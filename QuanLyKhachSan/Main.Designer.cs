@@ -101,6 +101,7 @@
             this.danhSachPhongButton.TabIndex = 6;
             this.danhSachPhongButton.Text = "Danh sách phòng";
             this.danhSachPhongButton.UseVisualStyleBackColor = true;
+            this.danhSachPhongButton.Click += new System.EventHandler(this.danhSachPhongButton_Click);
             // 
             // Form1
             // 

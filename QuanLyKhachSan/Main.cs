@@ -20,7 +20,7 @@ namespace QuanLyKhachSan
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form form3 = new Form3();
+            Form form3 = new DanhSachPhong();
             form3.Show();
 
         }
@@ -35,8 +35,11 @@ namespace QuanLyKhachSan
 
 
         }
-         
 
+        private void danhSachPhongButton_Click(object sender, EventArgs e)
+        {
+            new DanhSachPhong().Show();
+        }
     }
 
     }
