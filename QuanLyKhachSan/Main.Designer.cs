@@ -39,7 +39,7 @@
             // 
             // danhMucPhongButton
             // 
-            this.danhMucPhongButton.Location = new System.Drawing.Point(49, 45);
+            this.danhMucPhongButton.Location = new System.Drawing.Point(49, 57);
             this.danhMucPhongButton.Name = "danhMucPhongButton";
             this.danhMucPhongButton.Size = new System.Drawing.Size(144, 23);
             this.danhMucPhongButton.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // btnPhieuThuePhong
             // 
-            this.btnPhieuThuePhong.Location = new System.Drawing.Point(49, 86);
+            this.btnPhieuThuePhong.Location = new System.Drawing.Point(49, 98);
             this.btnPhieuThuePhong.Name = "btnPhieuThuePhong";
             this.btnPhieuThuePhong.Size = new System.Drawing.Size(144, 23);
             this.btnPhieuThuePhong.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             // btnTraCuu
             // 
-            this.btnTraCuu.Location = new System.Drawing.Point(49, 197);
+            this.btnTraCuu.Location = new System.Drawing.Point(49, 216);
             this.btnTraCuu.Name = "btnTraCuu";
             this.btnTraCuu.Size = new System.Drawing.Size(144, 23);
             this.btnTraCuu.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // btnHoaDonThanhToan
             // 
-            this.btnHoaDonThanhToan.Location = new System.Drawing.Point(49, 127);
+            this.btnHoaDonThanhToan.Location = new System.Drawing.Point(49, 139);
             this.btnHoaDonThanhToan.Name = "btnHoaDonThanhToan";
             this.btnHoaDonThanhToan.Size = new System.Drawing.Size(144, 23);
             this.btnHoaDonThanhToan.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             // baoCaoDoanhThuButton
             // 
-            this.baoCaoDoanhThuButton.Location = new System.Drawing.Point(49, 168);
+            this.baoCaoDoanhThuButton.Location = new System.Drawing.Point(49, 178);
             this.baoCaoDoanhThuButton.Name = "baoCaoDoanhThuButton";
             this.baoCaoDoanhThuButton.Size = new System.Drawing.Size(144, 23);
             this.baoCaoDoanhThuButton.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             // btnThayDoiQuyDinh
             // 
-            this.btnThayDoiQuyDinh.Location = new System.Drawing.Point(49, 226);
+            this.btnThayDoiQuyDinh.Location = new System.Drawing.Point(49, 255);
             this.btnThayDoiQuyDinh.Name = "btnThayDoiQuyDinh";
             this.btnThayDoiQuyDinh.Size = new System.Drawing.Size(144, 23);
             this.btnThayDoiQuyDinh.TabIndex = 5;
@@ -110,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 261);
+            this.ClientSize = new System.Drawing.Size(623, 307);
             this.Controls.Add(this.danhSachPhongButton);
             this.Controls.Add(this.btnThayDoiQuyDinh);
             this.Controls.Add(this.baoCaoDoanhThuButton);
