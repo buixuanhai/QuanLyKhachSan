@@ -41,6 +41,10 @@
             this.khachHangtextBox = new System.Windows.Forms.TextBox();
             this.loaiKhachcomboBox = new System.Windows.Forms.ComboBox();
             this.phieuThuePhongGridView = new System.Windows.Forms.DataGridView();
+            this.ThemButton = new System.Windows.Forms.Button();
+            this.XoaButton = new System.Windows.Forms.Button();
+            this.SuaButton = new System.Windows.Forms.Button();
+            this.luuButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.phieuThuePhongGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,11 +160,51 @@
             this.phieuThuePhongGridView.Size = new System.Drawing.Size(325, 196);
             this.phieuThuePhongGridView.TabIndex = 12;
             // 
+            // ThemButton
+            // 
+            this.ThemButton.Location = new System.Drawing.Point(147, 246);
+            this.ThemButton.Name = "ThemButton";
+            this.ThemButton.Size = new System.Drawing.Size(75, 23);
+            this.ThemButton.TabIndex = 13;
+            this.ThemButton.Text = "Thêm";
+            this.ThemButton.UseVisualStyleBackColor = true;
+            // 
+            // XoaButton
+            // 
+            this.XoaButton.Location = new System.Drawing.Point(486, 261);
+            this.XoaButton.Name = "XoaButton";
+            this.XoaButton.Size = new System.Drawing.Size(75, 23);
+            this.XoaButton.TabIndex = 14;
+            this.XoaButton.Text = "Xóa";
+            this.XoaButton.UseVisualStyleBackColor = true;
+            // 
+            // SuaButton
+            // 
+            this.SuaButton.Location = new System.Drawing.Point(567, 261);
+            this.SuaButton.Name = "SuaButton";
+            this.SuaButton.Size = new System.Drawing.Size(75, 23);
+            this.SuaButton.TabIndex = 15;
+            this.SuaButton.Text = "Sửa";
+            this.SuaButton.UseVisualStyleBackColor = true;
+            // 
+            // luuButton
+            // 
+            this.luuButton.Location = new System.Drawing.Point(648, 261);
+            this.luuButton.Name = "luuButton";
+            this.luuButton.Size = new System.Drawing.Size(75, 23);
+            this.luuButton.TabIndex = 16;
+            this.luuButton.Text = "Lưu";
+            this.luuButton.UseVisualStyleBackColor = true;
+            // 
             // PhieuThuePhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(758, 442);
+            this.Controls.Add(this.luuButton);
+            this.Controls.Add(this.SuaButton);
+            this.Controls.Add(this.XoaButton);
+            this.Controls.Add(this.ThemButton);
             this.Controls.Add(this.phieuThuePhongGridView);
             this.Controls.Add(this.loaiKhachcomboBox);
             this.Controls.Add(this.khachHangtextBox);
@@ -197,5 +241,9 @@
         private System.Windows.Forms.TextBox khachHangtextBox;
         private System.Windows.Forms.ComboBox loaiKhachcomboBox;
         private System.Windows.Forms.DataGridView phieuThuePhongGridView;
+        private System.Windows.Forms.Button ThemButton;
+        private System.Windows.Forms.Button XoaButton;
+        private System.Windows.Forms.Button SuaButton;
+        private System.Windows.Forms.Button luuButton;
     }
 }
