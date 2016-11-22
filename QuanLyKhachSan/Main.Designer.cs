@@ -65,6 +65,7 @@
             this.btnTraCuu.TabIndex = 2;
             this.btnTraCuu.Text = "Tra Cứu";
             this.btnTraCuu.UseVisualStyleBackColor = true;
+            this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click);
             // 
             // btnHoaDonThanhToan
             // 
