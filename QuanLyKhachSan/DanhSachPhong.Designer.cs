@@ -31,7 +31,7 @@
             this.soPhongTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.danhSachPhongGridView = new System.Windows.Forms.DataGridView();
             this.loaiPhongcomboBox = new System.Windows.Forms.ComboBox();
             this.xoaButton = new System.Windows.Forms.Button();
             this.luuButton = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@
             this.donGiacomboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tinhTrangtextBox = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachPhongGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // soPhongTextBox
@@ -69,13 +69,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Loại phòng";
             // 
-            // dataGridView1
+            // danhSachPhongGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(238, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(285, 161);
-            this.dataGridView1.TabIndex = 4;
+            this.danhSachPhongGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.danhSachPhongGridView.Location = new System.Drawing.Point(238, 12);
+            this.danhSachPhongGridView.Name = "danhSachPhongGridView";
+            this.danhSachPhongGridView.Size = new System.Drawing.Size(285, 161);
+            this.danhSachPhongGridView.TabIndex = 4;
             // 
             // loaiPhongcomboBox
             // 
@@ -179,13 +179,14 @@
             this.Controls.Add(this.luuButton);
             this.Controls.Add(this.xoaButton);
             this.Controls.Add(this.loaiPhongcomboBox);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.danhSachPhongGridView);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.soPhongTextBox);
             this.Name = "DanhSachPhong";
             this.Text = "Danh sách phòng";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.DanhSachPhong_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachPhongGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,7 +197,7 @@
         private System.Windows.Forms.TextBox soPhongTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView danhSachPhongGridView;
         private System.Windows.Forms.ComboBox loaiPhongcomboBox;
         private System.Windows.Forms.Button xoaButton;
         private System.Windows.Forms.Button luuButton;

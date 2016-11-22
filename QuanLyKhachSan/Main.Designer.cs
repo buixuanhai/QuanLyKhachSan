@@ -116,7 +116,7 @@
             this.Controls.Add(this.btnPhieuThuePhong);
             this.Controls.Add(this.danhMucPhongButton);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Quản Lý Khách Sạn";
             this.ResumeLayout(false);
 
         }

@@ -36,5 +36,10 @@ namespace QuanLyKhachSan
         {
 
         }
+
+        private void DanhSachPhong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
