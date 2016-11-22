@@ -59,7 +59,7 @@
             // 
             // btnTraCuu
             // 
-            this.btnTraCuu.Location = new System.Drawing.Point(49, 103);
+            this.btnTraCuu.Location = new System.Drawing.Point(49, 115);
             this.btnTraCuu.Name = "btnTraCuu";
             this.btnTraCuu.Size = new System.Drawing.Size(144, 23);
             this.btnTraCuu.TabIndex = 2;

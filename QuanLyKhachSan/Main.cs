@@ -20,7 +20,7 @@ namespace QuanLyKhachSan
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form form3 = new DanhSachPhong();
+            Form form3 = new PhieuThuePhong();
             form3.Show();
 
         }

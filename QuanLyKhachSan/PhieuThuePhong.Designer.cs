@@ -38,13 +38,13 @@
             this.ngayThuetextBox = new System.Windows.Forms.TextBox();
             this.diaChitextBox = new System.Windows.Forms.TextBox();
             this.cMDNtextBox = new System.Windows.Forms.TextBox();
-            this.khachHangtextBox = new System.Windows.Forms.TextBox();
             this.loaiKhachcomboBox = new System.Windows.Forms.ComboBox();
             this.phieuThuePhongGridView = new System.Windows.Forms.DataGridView();
             this.ThemButton = new System.Windows.Forms.Button();
             this.XoaButton = new System.Windows.Forms.Button();
             this.SuaButton = new System.Windows.Forms.Button();
             this.luuButton = new System.Windows.Forms.Button();
+            this.khachHangtextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.phieuThuePhongGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -133,19 +133,12 @@
             this.cMDNtextBox.Size = new System.Drawing.Size(121, 20);
             this.cMDNtextBox.TabIndex = 9;
             // 
-            // khachHangtextBox
-            // 
-            this.khachHangtextBox.Location = new System.Drawing.Point(101, 66);
-            this.khachHangtextBox.Name = "khachHangtextBox";
-            this.khachHangtextBox.Size = new System.Drawing.Size(121, 20);
-            this.khachHangtextBox.TabIndex = 10;
-            // 
             // loaiKhachcomboBox
             // 
             this.loaiKhachcomboBox.FormattingEnabled = true;
             this.loaiKhachcomboBox.Items.AddRange(new object[] {
-            "VIP",
-            "Thường"});
+            "Nội địa",
+            "Nước ngoài"});
             this.loaiKhachcomboBox.Location = new System.Drawing.Point(101, 106);
             this.loaiKhachcomboBox.Name = "loaiKhachcomboBox";
             this.loaiKhachcomboBox.Size = new System.Drawing.Size(121, 21);
@@ -196,18 +189,25 @@
             this.luuButton.Text = "Lưu";
             this.luuButton.UseVisualStyleBackColor = true;
             // 
+            // khachHangtextBox
+            // 
+            this.khachHangtextBox.Location = new System.Drawing.Point(101, 66);
+            this.khachHangtextBox.Name = "khachHangtextBox";
+            this.khachHangtextBox.Size = new System.Drawing.Size(100, 20);
+            this.khachHangtextBox.TabIndex = 17;
+            // 
             // PhieuThuePhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(758, 442);
+            this.Controls.Add(this.khachHangtextBox);
             this.Controls.Add(this.luuButton);
             this.Controls.Add(this.SuaButton);
             this.Controls.Add(this.XoaButton);
             this.Controls.Add(this.ThemButton);
             this.Controls.Add(this.phieuThuePhongGridView);
             this.Controls.Add(this.loaiKhachcomboBox);
-            this.Controls.Add(this.khachHangtextBox);
             this.Controls.Add(this.cMDNtextBox);
             this.Controls.Add(this.diaChitextBox);
             this.Controls.Add(this.ngayThuetextBox);
@@ -238,12 +238,12 @@
         private System.Windows.Forms.TextBox ngayThuetextBox;
         private System.Windows.Forms.TextBox diaChitextBox;
         private System.Windows.Forms.TextBox cMDNtextBox;
-        private System.Windows.Forms.TextBox khachHangtextBox;
         private System.Windows.Forms.ComboBox loaiKhachcomboBox;
         private System.Windows.Forms.DataGridView phieuThuePhongGridView;
         private System.Windows.Forms.Button ThemButton;
         private System.Windows.Forms.Button XoaButton;
         private System.Windows.Forms.Button SuaButton;
         private System.Windows.Forms.Button luuButton;
+        private System.Windows.Forms.TextBox khachHangtextBox;
     }
 }
