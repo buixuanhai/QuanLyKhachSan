@@ -32,9 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.timKiemButton = new System.Windows.Forms.Button();
-            this.loaiPhongcomboBox = new System.Windows.Forms.ComboBox();
-            this.ngayThuePhongcomboBox = new System.Windows.Forms.ComboBox();
-            this.loaiKhachcomboBox = new System.Windows.Forms.ComboBox();
+            this.loaiPhongComboBox = new System.Windows.Forms.ComboBox();
+            this.ngayThuePhongComboBox = new System.Windows.Forms.ComboBox();
+            this.loaiKhachComboBox = new System.Windows.Forms.ComboBox();
             this.traCuuGridView = new System.Windows.Forms.DataGridView();
             this.xoaButton = new System.Windows.Forms.Button();
             this.suaButton = new System.Windows.Forms.Button();
@@ -78,36 +78,36 @@
             this.timKiemButton.Text = "Tìm Kiếm";
             this.timKiemButton.UseVisualStyleBackColor = true;
             // 
-            // loaiPhongcomboBox
+            // loaiPhongComboBox
             // 
-            this.loaiPhongcomboBox.FormattingEnabled = true;
-            this.loaiPhongcomboBox.Items.AddRange(new object[] {
+            this.loaiPhongComboBox.FormattingEnabled = true;
+            this.loaiPhongComboBox.Items.AddRange(new object[] {
             "A",
             "B",
             "C"});
-            this.loaiPhongcomboBox.Location = new System.Drawing.Point(162, 23);
-            this.loaiPhongcomboBox.Name = "loaiPhongcomboBox";
-            this.loaiPhongcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.loaiPhongcomboBox.TabIndex = 4;
+            this.loaiPhongComboBox.Location = new System.Drawing.Point(162, 23);
+            this.loaiPhongComboBox.Name = "loaiPhongComboBox";
+            this.loaiPhongComboBox.Size = new System.Drawing.Size(121, 21);
+            this.loaiPhongComboBox.TabIndex = 4;
             // 
-            // ngayThuePhongcomboBox
+            // ngayThuePhongComboBox
             // 
-            this.ngayThuePhongcomboBox.FormattingEnabled = true;
-            this.ngayThuePhongcomboBox.Location = new System.Drawing.Point(162, 94);
-            this.ngayThuePhongcomboBox.Name = "ngayThuePhongcomboBox";
-            this.ngayThuePhongcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.ngayThuePhongcomboBox.TabIndex = 5;
+            this.ngayThuePhongComboBox.FormattingEnabled = true;
+            this.ngayThuePhongComboBox.Location = new System.Drawing.Point(162, 94);
+            this.ngayThuePhongComboBox.Name = "ngayThuePhongComboBox";
+            this.ngayThuePhongComboBox.Size = new System.Drawing.Size(121, 21);
+            this.ngayThuePhongComboBox.TabIndex = 5;
             // 
-            // loaiKhachcomboBox
+            // loaiKhachComboBox
             // 
-            this.loaiKhachcomboBox.FormattingEnabled = true;
-            this.loaiKhachcomboBox.Items.AddRange(new object[] {
+            this.loaiKhachComboBox.FormattingEnabled = true;
+            this.loaiKhachComboBox.Items.AddRange(new object[] {
             "Nội địa",
             "Nước ngoài"});
-            this.loaiKhachcomboBox.Location = new System.Drawing.Point(162, 58);
-            this.loaiKhachcomboBox.Name = "loaiKhachcomboBox";
-            this.loaiKhachcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.loaiKhachcomboBox.TabIndex = 6;
+            this.loaiKhachComboBox.Location = new System.Drawing.Point(162, 58);
+            this.loaiKhachComboBox.Name = "loaiKhachComboBox";
+            this.loaiKhachComboBox.Size = new System.Drawing.Size(121, 21);
+            this.loaiKhachComboBox.TabIndex = 6;
             // 
             // traCuuGridView
             // 
@@ -153,9 +153,9 @@
             this.Controls.Add(this.suaButton);
             this.Controls.Add(this.xoaButton);
             this.Controls.Add(this.traCuuGridView);
-            this.Controls.Add(this.loaiKhachcomboBox);
-            this.Controls.Add(this.ngayThuePhongcomboBox);
-            this.Controls.Add(this.loaiPhongcomboBox);
+            this.Controls.Add(this.loaiKhachComboBox);
+            this.Controls.Add(this.ngayThuePhongComboBox);
+            this.Controls.Add(this.loaiPhongComboBox);
             this.Controls.Add(this.timKiemButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -174,9 +174,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button timKiemButton;
-        private System.Windows.Forms.ComboBox loaiPhongcomboBox;
-        private System.Windows.Forms.ComboBox ngayThuePhongcomboBox;
-        private System.Windows.Forms.ComboBox loaiKhachcomboBox;
+        private System.Windows.Forms.ComboBox loaiPhongComboBox;
+        private System.Windows.Forms.ComboBox ngayThuePhongComboBox;
+        private System.Windows.Forms.ComboBox loaiKhachComboBox;
         private System.Windows.Forms.DataGridView traCuuGridView;
         private System.Windows.Forms.Button xoaButton;
         private System.Windows.Forms.Button suaButton;

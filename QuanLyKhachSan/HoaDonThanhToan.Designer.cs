@@ -34,14 +34,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.khachHangtextBox = new System.Windows.Forms.TextBox();
-            this.DiaChitextBox = new System.Windows.Forms.TextBox();
-            this.phongtextBox = new System.Windows.Forms.TextBox();
-            this.soNgayThuetextBox = new System.Windows.Forms.TextBox();
-            this.donGiatextBox = new System.Windows.Forms.TextBox();
-            this.thanhTientextBox = new System.Windows.Forms.TextBox();
+            this.khachHangTextBox = new System.Windows.Forms.TextBox();
+            this.DiaChiTextBox = new System.Windows.Forms.TextBox();
+            this.phongTextBox = new System.Windows.Forms.TextBox();
+            this.soNgayThueTextBox = new System.Windows.Forms.TextBox();
+            this.donGiaTextBox = new System.Windows.Forms.TextBox();
+            this.thanhTienTextBox = new System.Windows.Forms.TextBox();
             this.hoaDonThanhToanGridView = new System.Windows.Forms.DataGridView();
-            this.thembutton = new System.Windows.Forms.Button();
+            this.themButton = new System.Windows.Forms.Button();
             this.xoaButton = new System.Windows.Forms.Button();
             this.suaButton = new System.Windows.Forms.Button();
             this.luuButton = new System.Windows.Forms.Button();
@@ -103,47 +103,47 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Thành tiền";
             // 
-            // khachHangtextBox
+            // khachHangTextBox
             // 
-            this.khachHangtextBox.Location = new System.Drawing.Point(131, 18);
-            this.khachHangtextBox.Name = "khachHangtextBox";
-            this.khachHangtextBox.Size = new System.Drawing.Size(100, 20);
-            this.khachHangtextBox.TabIndex = 6;
+            this.khachHangTextBox.Location = new System.Drawing.Point(131, 18);
+            this.khachHangTextBox.Name = "khachHangTextBox";
+            this.khachHangTextBox.Size = new System.Drawing.Size(100, 20);
+            this.khachHangTextBox.TabIndex = 6;
             // 
-            // DiaChitextBox
+            // DiaChiTextBox
             // 
-            this.DiaChitextBox.Location = new System.Drawing.Point(131, 56);
-            this.DiaChitextBox.Name = "DiaChitextBox";
-            this.DiaChitextBox.Size = new System.Drawing.Size(100, 20);
-            this.DiaChitextBox.TabIndex = 7;
+            this.DiaChiTextBox.Location = new System.Drawing.Point(131, 56);
+            this.DiaChiTextBox.Name = "DiaChiTextBox";
+            this.DiaChiTextBox.Size = new System.Drawing.Size(100, 20);
+            this.DiaChiTextBox.TabIndex = 7;
             // 
-            // phongtextBox
+            // phongTextBox
             // 
-            this.phongtextBox.Location = new System.Drawing.Point(131, 88);
-            this.phongtextBox.Name = "phongtextBox";
-            this.phongtextBox.Size = new System.Drawing.Size(100, 20);
-            this.phongtextBox.TabIndex = 8;
+            this.phongTextBox.Location = new System.Drawing.Point(131, 88);
+            this.phongTextBox.Name = "phongTextBox";
+            this.phongTextBox.Size = new System.Drawing.Size(100, 20);
+            this.phongTextBox.TabIndex = 8;
             // 
-            // soNgayThuetextBox
+            // soNgayThueTextBox
             // 
-            this.soNgayThuetextBox.Location = new System.Drawing.Point(131, 123);
-            this.soNgayThuetextBox.Name = "soNgayThuetextBox";
-            this.soNgayThuetextBox.Size = new System.Drawing.Size(100, 20);
-            this.soNgayThuetextBox.TabIndex = 9;
+            this.soNgayThueTextBox.Location = new System.Drawing.Point(131, 123);
+            this.soNgayThueTextBox.Name = "soNgayThueTextBox";
+            this.soNgayThueTextBox.Size = new System.Drawing.Size(100, 20);
+            this.soNgayThueTextBox.TabIndex = 9;
             // 
-            // donGiatextBox
+            // donGiaTextBox
             // 
-            this.donGiatextBox.Location = new System.Drawing.Point(131, 155);
-            this.donGiatextBox.Name = "donGiatextBox";
-            this.donGiatextBox.Size = new System.Drawing.Size(100, 20);
-            this.donGiatextBox.TabIndex = 10;
+            this.donGiaTextBox.Location = new System.Drawing.Point(131, 155);
+            this.donGiaTextBox.Name = "donGiaTextBox";
+            this.donGiaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.donGiaTextBox.TabIndex = 10;
             // 
-            // thanhTientextBox
+            // thanhTienTextBox
             // 
-            this.thanhTientextBox.Location = new System.Drawing.Point(131, 191);
-            this.thanhTientextBox.Name = "thanhTientextBox";
-            this.thanhTientextBox.Size = new System.Drawing.Size(100, 20);
-            this.thanhTientextBox.TabIndex = 11;
+            this.thanhTienTextBox.Location = new System.Drawing.Point(131, 191);
+            this.thanhTienTextBox.Name = "thanhTienTextBox";
+            this.thanhTienTextBox.Size = new System.Drawing.Size(100, 20);
+            this.thanhTienTextBox.TabIndex = 11;
             // 
             // hoaDonThanhToanGridView
             // 
@@ -153,14 +153,14 @@
             this.hoaDonThanhToanGridView.Size = new System.Drawing.Size(324, 186);
             this.hoaDonThanhToanGridView.TabIndex = 12;
             // 
-            // thembutton
+            // themButton
             // 
-            this.thembutton.Location = new System.Drawing.Point(169, 230);
-            this.thembutton.Name = "thembutton";
-            this.thembutton.Size = new System.Drawing.Size(75, 23);
-            this.thembutton.TabIndex = 13;
-            this.thembutton.Text = "Thêm";
-            this.thembutton.UseVisualStyleBackColor = true;
+            this.themButton.Location = new System.Drawing.Point(169, 230);
+            this.themButton.Name = "themButton";
+            this.themButton.Size = new System.Drawing.Size(75, 23);
+            this.themButton.TabIndex = 13;
+            this.themButton.Text = "Thêm";
+            this.themButton.UseVisualStyleBackColor = true;
             // 
             // xoaButton
             // 
@@ -197,14 +197,14 @@
             this.Controls.Add(this.luuButton);
             this.Controls.Add(this.suaButton);
             this.Controls.Add(this.xoaButton);
-            this.Controls.Add(this.thembutton);
+            this.Controls.Add(this.themButton);
             this.Controls.Add(this.hoaDonThanhToanGridView);
-            this.Controls.Add(this.thanhTientextBox);
-            this.Controls.Add(this.donGiatextBox);
-            this.Controls.Add(this.soNgayThuetextBox);
-            this.Controls.Add(this.phongtextBox);
-            this.Controls.Add(this.DiaChitextBox);
-            this.Controls.Add(this.khachHangtextBox);
+            this.Controls.Add(this.thanhTienTextBox);
+            this.Controls.Add(this.donGiaTextBox);
+            this.Controls.Add(this.soNgayThueTextBox);
+            this.Controls.Add(this.phongTextBox);
+            this.Controls.Add(this.DiaChiTextBox);
+            this.Controls.Add(this.khachHangTextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -227,14 +227,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox khachHangtextBox;
-        private System.Windows.Forms.TextBox DiaChitextBox;
-        private System.Windows.Forms.TextBox phongtextBox;
-        private System.Windows.Forms.TextBox soNgayThuetextBox;
-        private System.Windows.Forms.TextBox donGiatextBox;
-        private System.Windows.Forms.TextBox thanhTientextBox;
+        private System.Windows.Forms.TextBox khachHangTextBox;
+        private System.Windows.Forms.TextBox DiaChiTextBox;
+        private System.Windows.Forms.TextBox phongTextBox;
+        private System.Windows.Forms.TextBox soNgayThueTextBox;
+        private System.Windows.Forms.TextBox donGiaTextBox;
+        private System.Windows.Forms.TextBox thanhTienTextBox;
         private System.Windows.Forms.DataGridView hoaDonThanhToanGridView;
-        private System.Windows.Forms.Button thembutton;
+        private System.Windows.Forms.Button themButton;
         private System.Windows.Forms.Button xoaButton;
         private System.Windows.Forms.Button suaButton;
         private System.Windows.Forms.Button luuButton;

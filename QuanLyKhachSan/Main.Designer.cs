@@ -28,54 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.danhMucPhongButton = new System.Windows.Forms.Button();
-            this.btnPhieuThuePhong = new System.Windows.Forms.Button();
-            this.btnTraCuu = new System.Windows.Forms.Button();
-            this.btnHoaDonThanhToan = new System.Windows.Forms.Button();
+            this.loaiPhongButton = new System.Windows.Forms.Button();
+            this.phieuThuePhongButton = new System.Windows.Forms.Button();
+            this.traCuuButton = new System.Windows.Forms.Button();
+            this.hoaDonThanhToanButton = new System.Windows.Forms.Button();
             this.baoCaoDoanhThuButton = new System.Windows.Forms.Button();
-            this.btnThayDoiQuyDinh = new System.Windows.Forms.Button();
+            this.thayDoiQuyDinhButton = new System.Windows.Forms.Button();
             this.danhSachPhongButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // danhMucPhongButton
+            // loaiPhongButton
             // 
-            this.danhMucPhongButton.Location = new System.Drawing.Point(49, 57);
-            this.danhMucPhongButton.Name = "danhMucPhongButton";
-            this.danhMucPhongButton.Size = new System.Drawing.Size(144, 23);
-            this.danhMucPhongButton.TabIndex = 0;
-            this.danhMucPhongButton.Text = "Loại phòng";
-            this.danhMucPhongButton.UseVisualStyleBackColor = true;
-            this.danhMucPhongButton.Click += new System.EventHandler(this.button1_Click);
+            this.loaiPhongButton.Location = new System.Drawing.Point(49, 57);
+            this.loaiPhongButton.Name = "loaiPhongButton";
+            this.loaiPhongButton.Size = new System.Drawing.Size(144, 23);
+            this.loaiPhongButton.TabIndex = 0;
+            this.loaiPhongButton.Text = "Loại phòng";
+            this.loaiPhongButton.UseVisualStyleBackColor = true;
+            this.loaiPhongButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnPhieuThuePhong
+            // phieuThuePhongButton
             // 
-            this.btnPhieuThuePhong.Location = new System.Drawing.Point(49, 98);
-            this.btnPhieuThuePhong.Name = "btnPhieuThuePhong";
-            this.btnPhieuThuePhong.Size = new System.Drawing.Size(144, 23);
-            this.btnPhieuThuePhong.TabIndex = 1;
-            this.btnPhieuThuePhong.Text = "Phiếu Thuê Phòng";
-            this.btnPhieuThuePhong.UseVisualStyleBackColor = true;
-            this.btnPhieuThuePhong.Click += new System.EventHandler(this.button2_Click);
+            this.phieuThuePhongButton.Location = new System.Drawing.Point(49, 98);
+            this.phieuThuePhongButton.Name = "phieuThuePhongButton";
+            this.phieuThuePhongButton.Size = new System.Drawing.Size(144, 23);
+            this.phieuThuePhongButton.TabIndex = 1;
+            this.phieuThuePhongButton.Text = "Phiếu Thuê Phòng";
+            this.phieuThuePhongButton.UseVisualStyleBackColor = true;
+            this.phieuThuePhongButton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnTraCuu
+            // traCuuButton
             // 
-            this.btnTraCuu.Location = new System.Drawing.Point(49, 216);
-            this.btnTraCuu.Name = "btnTraCuu";
-            this.btnTraCuu.Size = new System.Drawing.Size(144, 23);
-            this.btnTraCuu.TabIndex = 2;
-            this.btnTraCuu.Text = "Tra Cứu";
-            this.btnTraCuu.UseVisualStyleBackColor = true;
-            this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click);
+            this.traCuuButton.Location = new System.Drawing.Point(49, 216);
+            this.traCuuButton.Name = "traCuuButton";
+            this.traCuuButton.Size = new System.Drawing.Size(144, 23);
+            this.traCuuButton.TabIndex = 2;
+            this.traCuuButton.Text = "Tra Cứu";
+            this.traCuuButton.UseVisualStyleBackColor = true;
+            this.traCuuButton.Click += new System.EventHandler(this.btnTraCuu_Click);
             // 
-            // btnHoaDonThanhToan
+            // hoaDonThanhToanButton
             // 
-            this.btnHoaDonThanhToan.Location = new System.Drawing.Point(49, 139);
-            this.btnHoaDonThanhToan.Name = "btnHoaDonThanhToan";
-            this.btnHoaDonThanhToan.Size = new System.Drawing.Size(144, 23);
-            this.btnHoaDonThanhToan.TabIndex = 3;
-            this.btnHoaDonThanhToan.Text = "Hóa Đơn Thanh Toán";
-            this.btnHoaDonThanhToan.UseVisualStyleBackColor = true;
-            this.btnHoaDonThanhToan.Click += new System.EventHandler(this.btnLapHoaDon_Click);
+            this.hoaDonThanhToanButton.Location = new System.Drawing.Point(49, 139);
+            this.hoaDonThanhToanButton.Name = "hoaDonThanhToanButton";
+            this.hoaDonThanhToanButton.Size = new System.Drawing.Size(144, 23);
+            this.hoaDonThanhToanButton.TabIndex = 3;
+            this.hoaDonThanhToanButton.Text = "Hóa Đơn Thanh Toán";
+            this.hoaDonThanhToanButton.UseVisualStyleBackColor = true;
+            this.hoaDonThanhToanButton.Click += new System.EventHandler(this.btnLapHoaDon_Click);
             // 
             // baoCaoDoanhThuButton
             // 
@@ -87,14 +87,14 @@
             this.baoCaoDoanhThuButton.UseVisualStyleBackColor = true;
             this.baoCaoDoanhThuButton.Click += new System.EventHandler(this.btnLapBaoCaoThang_Click);
             // 
-            // btnThayDoiQuyDinh
+            // thayDoiQuyDinhButton
             // 
-            this.btnThayDoiQuyDinh.Location = new System.Drawing.Point(49, 255);
-            this.btnThayDoiQuyDinh.Name = "btnThayDoiQuyDinh";
-            this.btnThayDoiQuyDinh.Size = new System.Drawing.Size(144, 23);
-            this.btnThayDoiQuyDinh.TabIndex = 5;
-            this.btnThayDoiQuyDinh.Text = "Thay Đổi Quy Định";
-            this.btnThayDoiQuyDinh.UseVisualStyleBackColor = true;
+            this.thayDoiQuyDinhButton.Location = new System.Drawing.Point(49, 255);
+            this.thayDoiQuyDinhButton.Name = "thayDoiQuyDinhButton";
+            this.thayDoiQuyDinhButton.Size = new System.Drawing.Size(144, 23);
+            this.thayDoiQuyDinhButton.TabIndex = 5;
+            this.thayDoiQuyDinhButton.Text = "Thay Đổi Quy Định";
+            this.thayDoiQuyDinhButton.UseVisualStyleBackColor = true;
             // 
             // danhSachPhongButton
             // 
@@ -112,12 +112,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 307);
             this.Controls.Add(this.danhSachPhongButton);
-            this.Controls.Add(this.btnThayDoiQuyDinh);
+            this.Controls.Add(this.thayDoiQuyDinhButton);
             this.Controls.Add(this.baoCaoDoanhThuButton);
-            this.Controls.Add(this.btnHoaDonThanhToan);
-            this.Controls.Add(this.btnTraCuu);
-            this.Controls.Add(this.btnPhieuThuePhong);
-            this.Controls.Add(this.danhMucPhongButton);
+            this.Controls.Add(this.hoaDonThanhToanButton);
+            this.Controls.Add(this.traCuuButton);
+            this.Controls.Add(this.phieuThuePhongButton);
+            this.Controls.Add(this.loaiPhongButton);
             this.Name = "Form1";
             this.Text = "Quản Lý Khách Sạn";
             this.ResumeLayout(false);
@@ -126,12 +126,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button danhMucPhongButton;
-        private System.Windows.Forms.Button btnPhieuThuePhong;
-        private System.Windows.Forms.Button btnTraCuu;
-        private System.Windows.Forms.Button btnHoaDonThanhToan;
+        private System.Windows.Forms.Button loaiPhongButton;
+        private System.Windows.Forms.Button phieuThuePhongButton;
+        private System.Windows.Forms.Button traCuuButton;
+        private System.Windows.Forms.Button hoaDonThanhToanButton;
         private System.Windows.Forms.Button baoCaoDoanhThuButton;
-        private System.Windows.Forms.Button btnThayDoiQuyDinh;
+        private System.Windows.Forms.Button thayDoiQuyDinhButton;
         private System.Windows.Forms.Button danhSachPhongButton;
     }
 }

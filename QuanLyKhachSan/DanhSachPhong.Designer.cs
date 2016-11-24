@@ -32,15 +32,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.danhSachPhongGridView = new System.Windows.Forms.DataGridView();
-            this.loaiPhongcomboBox = new System.Windows.Forms.ComboBox();
+            this.loaiPhongComboBox = new System.Windows.Forms.ComboBox();
             this.xoaButton = new System.Windows.Forms.Button();
             this.luuButton = new System.Windows.Forms.Button();
             this.suaButton = new System.Windows.Forms.Button();
             this.themButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.donGiacomboBox = new System.Windows.Forms.ComboBox();
+            this.donGiaComboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tinhTrangtextBox = new System.Windows.Forms.TextBox();
+            this.tinhTrangTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.danhSachPhongGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,17 +77,17 @@
             this.danhSachPhongGridView.Size = new System.Drawing.Size(285, 161);
             this.danhSachPhongGridView.TabIndex = 4;
             // 
-            // loaiPhongcomboBox
+            // loaiPhongComboBox
             // 
-            this.loaiPhongcomboBox.FormattingEnabled = true;
-            this.loaiPhongcomboBox.Items.AddRange(new object[] {
+            this.loaiPhongComboBox.FormattingEnabled = true;
+            this.loaiPhongComboBox.Items.AddRange(new object[] {
             "A",
             "B",
             "C"});
-            this.loaiPhongcomboBox.Location = new System.Drawing.Point(82, 63);
-            this.loaiPhongcomboBox.Name = "loaiPhongcomboBox";
-            this.loaiPhongcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.loaiPhongcomboBox.TabIndex = 5;
+            this.loaiPhongComboBox.Location = new System.Drawing.Point(82, 63);
+            this.loaiPhongComboBox.Name = "loaiPhongComboBox";
+            this.loaiPhongComboBox.Size = new System.Drawing.Size(121, 21);
+            this.loaiPhongComboBox.TabIndex = 5;
             // 
             // xoaButton
             // 
@@ -135,18 +135,18 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Đơn giá";
             // 
-            // donGiacomboBox
+            // donGiaComboBox
             // 
-            this.donGiacomboBox.FormattingEnabled = true;
-            this.donGiacomboBox.Items.AddRange(new object[] {
+            this.donGiaComboBox.FormattingEnabled = true;
+            this.donGiaComboBox.Items.AddRange(new object[] {
             "150 000",
             "170 000",
             "200 000"});
-            this.donGiacomboBox.Location = new System.Drawing.Point(83, 103);
-            this.donGiacomboBox.Name = "donGiacomboBox";
-            this.donGiacomboBox.Size = new System.Drawing.Size(121, 21);
-            this.donGiacomboBox.TabIndex = 11;
-            this.donGiacomboBox.SelectedIndexChanged += new System.EventHandler(this.donGiacomboBox_SelectedIndexChanged);
+            this.donGiaComboBox.Location = new System.Drawing.Point(83, 103);
+            this.donGiaComboBox.Name = "donGiaComboBox";
+            this.donGiaComboBox.Size = new System.Drawing.Size(121, 21);
+            this.donGiaComboBox.TabIndex = 11;
+            this.donGiaComboBox.SelectedIndexChanged += new System.EventHandler(this.donGiacomboBox_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -158,27 +158,27 @@
             this.label4.Text = "Tình trạng";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // tinhTrangtextBox
+            // tinhTrangTextBox
             // 
-            this.tinhTrangtextBox.Location = new System.Drawing.Point(82, 135);
-            this.tinhTrangtextBox.Name = "tinhTrangtextBox";
-            this.tinhTrangtextBox.Size = new System.Drawing.Size(122, 20);
-            this.tinhTrangtextBox.TabIndex = 13;
+            this.tinhTrangTextBox.Location = new System.Drawing.Point(82, 135);
+            this.tinhTrangTextBox.Name = "tinhTrangTextBox";
+            this.tinhTrangTextBox.Size = new System.Drawing.Size(122, 20);
+            this.tinhTrangTextBox.TabIndex = 13;
             // 
             // DanhSachPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 261);
-            this.Controls.Add(this.tinhTrangtextBox);
+            this.Controls.Add(this.tinhTrangTextBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.donGiacomboBox);
+            this.Controls.Add(this.donGiaComboBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.themButton);
             this.Controls.Add(this.suaButton);
             this.Controls.Add(this.luuButton);
             this.Controls.Add(this.xoaButton);
-            this.Controls.Add(this.loaiPhongcomboBox);
+            this.Controls.Add(this.loaiPhongComboBox);
             this.Controls.Add(this.danhSachPhongGridView);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -198,14 +198,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView danhSachPhongGridView;
-        private System.Windows.Forms.ComboBox loaiPhongcomboBox;
+        private System.Windows.Forms.ComboBox loaiPhongComboBox;
         private System.Windows.Forms.Button xoaButton;
         private System.Windows.Forms.Button luuButton;
         private System.Windows.Forms.Button suaButton;
         private System.Windows.Forms.Button themButton;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox donGiacomboBox;
+        private System.Windows.Forms.ComboBox donGiaComboBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tinhTrangtextBox;
+        private System.Windows.Forms.TextBox tinhTrangTextBox;
     }
 }

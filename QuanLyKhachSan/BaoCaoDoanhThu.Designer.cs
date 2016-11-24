@@ -32,10 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.thangcomboBox = new System.Windows.Forms.ComboBox();
-            this.loaiPhongcomboBox = new System.Windows.Forms.ComboBox();
-            this.doanhThutextBox = new System.Windows.Forms.TextBox();
-            this.tyLetextBox = new System.Windows.Forms.TextBox();
+            this.thangComboBox = new System.Windows.Forms.ComboBox();
+            this.loaiPhongComboBox = new System.Windows.Forms.ComboBox();
+            this.doanhThuTextBox = new System.Windows.Forms.TextBox();
+            this.tyLeTextBox = new System.Windows.Forms.TextBox();
             this.baoCaoDoanhThuGridView = new System.Windows.Forms.DataGridView();
             this.themButton = new System.Windows.Forms.Button();
             this.xoaButton = new System.Windows.Forms.Button();
@@ -80,10 +80,10 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Tỷ lệ";
             // 
-            // thangcomboBox
+            // thangComboBox
             // 
-            this.thangcomboBox.FormattingEnabled = true;
-            this.thangcomboBox.Items.AddRange(new object[] {
+            this.thangComboBox.FormattingEnabled = true;
+            this.thangComboBox.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -96,36 +96,36 @@
             "10",
             "11",
             "12"});
-            this.thangcomboBox.Location = new System.Drawing.Point(156, 24);
-            this.thangcomboBox.Name = "thangcomboBox";
-            this.thangcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.thangcomboBox.TabIndex = 4;
+            this.thangComboBox.Location = new System.Drawing.Point(156, 24);
+            this.thangComboBox.Name = "thangComboBox";
+            this.thangComboBox.Size = new System.Drawing.Size(121, 21);
+            this.thangComboBox.TabIndex = 4;
             // 
-            // loaiPhongcomboBox
+            // loaiPhongComboBox
             // 
-            this.loaiPhongcomboBox.FormattingEnabled = true;
-            this.loaiPhongcomboBox.Items.AddRange(new object[] {
+            this.loaiPhongComboBox.FormattingEnabled = true;
+            this.loaiPhongComboBox.Items.AddRange(new object[] {
             "A",
             "B",
             "C"});
-            this.loaiPhongcomboBox.Location = new System.Drawing.Point(156, 55);
-            this.loaiPhongcomboBox.Name = "loaiPhongcomboBox";
-            this.loaiPhongcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.loaiPhongcomboBox.TabIndex = 5;
+            this.loaiPhongComboBox.Location = new System.Drawing.Point(156, 55);
+            this.loaiPhongComboBox.Name = "loaiPhongComboBox";
+            this.loaiPhongComboBox.Size = new System.Drawing.Size(121, 21);
+            this.loaiPhongComboBox.TabIndex = 5;
             // 
-            // doanhThutextBox
+            // doanhThuTextBox
             // 
-            this.doanhThutextBox.Location = new System.Drawing.Point(156, 87);
-            this.doanhThutextBox.Name = "doanhThutextBox";
-            this.doanhThutextBox.Size = new System.Drawing.Size(100, 20);
-            this.doanhThutextBox.TabIndex = 6;
+            this.doanhThuTextBox.Location = new System.Drawing.Point(156, 87);
+            this.doanhThuTextBox.Name = "doanhThuTextBox";
+            this.doanhThuTextBox.Size = new System.Drawing.Size(100, 20);
+            this.doanhThuTextBox.TabIndex = 6;
             // 
-            // tyLetextBox
+            // tyLeTextBox
             // 
-            this.tyLetextBox.Location = new System.Drawing.Point(156, 120);
-            this.tyLetextBox.Name = "tyLetextBox";
-            this.tyLetextBox.Size = new System.Drawing.Size(100, 20);
-            this.tyLetextBox.TabIndex = 7;
+            this.tyLeTextBox.Location = new System.Drawing.Point(156, 120);
+            this.tyLeTextBox.Name = "tyLeTextBox";
+            this.tyLeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.tyLeTextBox.TabIndex = 7;
             // 
             // baoCaoDoanhThuGridView
             // 
@@ -181,10 +181,10 @@
             this.Controls.Add(this.xoaButton);
             this.Controls.Add(this.themButton);
             this.Controls.Add(this.baoCaoDoanhThuGridView);
-            this.Controls.Add(this.tyLetextBox);
-            this.Controls.Add(this.doanhThutextBox);
-            this.Controls.Add(this.loaiPhongcomboBox);
-            this.Controls.Add(this.thangcomboBox);
+            this.Controls.Add(this.tyLeTextBox);
+            this.Controls.Add(this.doanhThuTextBox);
+            this.Controls.Add(this.loaiPhongComboBox);
+            this.Controls.Add(this.thangComboBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -203,10 +203,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox thangcomboBox;
-        private System.Windows.Forms.ComboBox loaiPhongcomboBox;
-        private System.Windows.Forms.TextBox doanhThutextBox;
-        private System.Windows.Forms.TextBox tyLetextBox;
+        private System.Windows.Forms.ComboBox thangComboBox;
+        private System.Windows.Forms.ComboBox loaiPhongComboBox;
+        private System.Windows.Forms.TextBox doanhThuTextBox;
+        private System.Windows.Forms.TextBox tyLeTextBox;
         private System.Windows.Forms.DataGridView baoCaoDoanhThuGridView;
         private System.Windows.Forms.Button themButton;
         private System.Windows.Forms.Button xoaButton;

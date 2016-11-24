@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.themButton = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
+            this.xoaButton = new System.Windows.Forms.Button();
+            this.suaButton = new System.Windows.Forms.Button();
             this.txtGhiChu = new System.Windows.Forms.Label();
             this.loaiPhongTextBox = new System.Windows.Forms.TextBox();
             this.donGianTextBox = new System.Windows.Forms.TextBox();
@@ -52,24 +52,24 @@
             this.themButton.UseVisualStyleBackColor = true;
             this.themButton.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // btnXoa
+            // xoaButton
             // 
-            this.btnXoa.Location = new System.Drawing.Point(597, 172);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 23);
-            this.btnXoa.TabIndex = 5;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.xoaButton.Location = new System.Drawing.Point(597, 172);
+            this.xoaButton.Name = "xoaButton";
+            this.xoaButton.Size = new System.Drawing.Size(75, 23);
+            this.xoaButton.TabIndex = 5;
+            this.xoaButton.Text = "Xóa";
+            this.xoaButton.UseVisualStyleBackColor = true;
             // 
-            // btnSua
+            // suaButton
             // 
-            this.btnSua.Location = new System.Drawing.Point(435, 172);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
-            this.btnSua.TabIndex = 6;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.button3_Click);
+            this.suaButton.Location = new System.Drawing.Point(435, 172);
+            this.suaButton.Name = "suaButton";
+            this.suaButton.Size = new System.Drawing.Size(75, 23);
+            this.suaButton.TabIndex = 6;
+            this.suaButton.Text = "Sửa";
+            this.suaButton.UseVisualStyleBackColor = true;
+            this.suaButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // txtGhiChu
             // 
@@ -151,8 +151,8 @@
             this.Controls.Add(this.donGianTextBox);
             this.Controls.Add(this.loaiPhongTextBox);
             this.Controls.Add(this.txtGhiChu);
-            this.Controls.Add(this.btnSua);
-            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.suaButton);
+            this.Controls.Add(this.xoaButton);
             this.Controls.Add(this.themButton);
             this.Name = "DanhMucPhong";
             this.Text = "Loại phòng";
@@ -165,8 +165,8 @@
 
         #endregion
         private System.Windows.Forms.Button themButton;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button xoaButton;
+        private System.Windows.Forms.Button suaButton;
         private System.Windows.Forms.Label txtGhiChu;
         private System.Windows.Forms.TextBox loaiPhongTextBox;
         private System.Windows.Forms.TextBox donGianTextBox;
