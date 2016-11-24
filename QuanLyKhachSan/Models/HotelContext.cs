@@ -15,5 +15,9 @@ namespace QuanLyKhachSan.Models
         }
 
        
+        public DbSet<Room> Rooms { get; set; }
+        public DbSet<RoomType> RoomTypes { get; set; }
+        public DbSet<Receipt> Receipts { get; set; }
+        public DbSet<CheckIn> CheckIns { get; set; }
     }
 }

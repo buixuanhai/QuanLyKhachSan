@@ -86,8 +86,11 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CheckIn.cs" />
     <Compile Include="Models\HotelContext.cs" />
+    <Compile Include="Models\Receipt.cs" />
     <Compile Include="Models\Room.cs" />
+    <Compile Include="Models\RoomType.cs" />
     <Compile Include="PhieuThuePhong.cs">
       <SubType>Form</SubType>
     </Compile>
