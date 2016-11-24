@@ -24,12 +24,12 @@ namespace QuanLyKhachSan.Repositories
             throw new NotImplementedException();
         }
 
-        public List<RoomType> get(int id)
+        public int update(RoomType item)
         {
             throw new NotImplementedException();
         }
 
-        public int update(RoomType item)
+        RoomType IRepository<RoomType>.get(int id)
         {
             throw new NotImplementedException();
         }

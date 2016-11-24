@@ -24,12 +24,12 @@ namespace QuanLyKhachSan.Repositories
             throw new NotImplementedException();
         }
 
-        public List<Receipt> get(int id)
+        public int update(Receipt item)
         {
             throw new NotImplementedException();
         }
 
-        public int update(Receipt item)
+        Receipt IRepository<Receipt>.get(int id)
         {
             throw new NotImplementedException();
         }

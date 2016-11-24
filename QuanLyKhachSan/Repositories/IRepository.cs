@@ -9,7 +9,7 @@ namespace QuanLyKhachSan.Repositories
     public interface IRepository<T>
     {
         List<T> get();
-        List<T> get(int id);
+        T get(int id);
         int create(T item);
         int update(T item);
         int delete(T item); 

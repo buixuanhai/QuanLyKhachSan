@@ -24,12 +24,13 @@ namespace QuanLyKhachSan.Repositories
             throw new NotImplementedException();
         }
 
-        public List<CheckIn> get(int id)
+
+        public int update(CheckIn item)
         {
             throw new NotImplementedException();
         }
 
-        public int update(CheckIn item)
+        CheckIn IRepository<CheckIn>.get(int id)
         {
             throw new NotImplementedException();
         }

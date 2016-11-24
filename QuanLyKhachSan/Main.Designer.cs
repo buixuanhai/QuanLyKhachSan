@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhachSan
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -106,7 +106,7 @@
             this.danhSachPhongButton.UseVisualStyleBackColor = true;
             this.danhSachPhongButton.Click += new System.EventHandler(this.danhSachPhongButton_Click);
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,7 +118,7 @@
             this.Controls.Add(this.traCuuButton);
             this.Controls.Add(this.phieuThuePhongButton);
             this.Controls.Add(this.loaiPhongButton);
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "Quản Lý Khách Sạn";
             this.ResumeLayout(false);
 
