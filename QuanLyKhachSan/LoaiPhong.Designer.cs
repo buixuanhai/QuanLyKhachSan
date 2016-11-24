@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhachSan
 {
-    partial class DanhMucPhong
+    partial class LoaiPhong
     {
         /// <summary>
         /// Required designer variable.
@@ -138,7 +138,7 @@
             this.loaiPhongGridView.Size = new System.Drawing.Size(359, 148);
             this.loaiPhongGridView.TabIndex = 16;
             // 
-            // DanhMucPhong
+            // LoaiPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -154,7 +154,7 @@
             this.Controls.Add(this.suaButton);
             this.Controls.Add(this.xoaButton);
             this.Controls.Add(this.themButton);
-            this.Name = "DanhMucPhong";
+            this.Name = "LoaiPhong";
             this.Text = "Loại phòng";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.loaiPhongGridView)).EndInit();

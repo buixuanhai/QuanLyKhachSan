@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyKhachSan.Models;
+using QuanLyKhachSan.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,12 @@ namespace QuanLyKhachSan
 {
     public partial class DanhSachPhong : Form
     {
-        public DanhSachPhong()
+        private IRepository<Room> _repo;
+
+        public DanhSachPhong(IRepository<Room> repo)
         {
             InitializeComponent();
+            _repo = repo;
         }
 
         private void donGiacomboBox_SelectedIndexChanged(object sender, EventArgs e)

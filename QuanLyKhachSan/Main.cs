@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Ninject;
+using QuanLyKhachSan.Models;
+using QuanLyKhachSan.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +15,16 @@ namespace QuanLyKhachSan
 {
     public partial class Main : Form
     {
+        private IKernel kernel;
+
         public Main()
         {
             InitializeComponent();
-        
+            kernel = new StandardKernel();
+            kernel.Bind<IRepository<Receipt>>().To<ReceiptRepository>();
+            kernel.Bind<IRepository<CheckIn>>().To<CheckInRepository>();
+            kernel.Bind<IRepository<Room>>().To<RoomRepository>();
+            kernel.Bind<IRepository<RoomType>>().To<RoomTypeRepository>();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -28,7 +37,7 @@ namespace QuanLyKhachSan
         private void button1_Click(object sender, EventArgs e)
         {
             {
-                Form form2 = new DanhMucPhong();
+                Form form2 = new LoaiPhong();
                 form2.Show();
             }
             //this.Close();
@@ -38,7 +47,7 @@ namespace QuanLyKhachSan
 
         private void danhSachPhongButton_Click(object sender, EventArgs e)
         {
-            new DanhSachPhong().Show();
+            kernel.Get<DanhSachPhong>().Show();
         }
 
         private void btnLapHoaDon_Click(object sender, EventArgs e)
