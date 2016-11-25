@@ -9,28 +9,28 @@ namespace QuanLyKhachSan.Repositories
 {
     public class CheckInRepository : IRepository<CheckIn>
     {
-        public int create(CheckIn item)
+        public int Create(CheckIn item)
         {
             throw new NotImplementedException();
         }
 
-        public int delete(CheckIn item)
+        public int Delete(CheckIn item)
         {
             throw new NotImplementedException();
         }
 
-        public List<CheckIn> get()
+        public List<CheckIn> Get()
         {
             throw new NotImplementedException();
         }
 
 
-        public int update(CheckIn item)
+        public int Update(CheckIn item)
         {
             throw new NotImplementedException();
         }
 
-        CheckIn IRepository<CheckIn>.get(int id)
+        CheckIn IRepository<CheckIn>.Get(int id)
         {
             throw new NotImplementedException();
         }

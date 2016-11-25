@@ -9,27 +9,27 @@ namespace QuanLyKhachSan.Repositories
 {
     public class ReceiptRepository : IRepository<Receipt>
     {
-        public int create(Receipt item)
+        public int Create(Receipt item)
         {
             throw new NotImplementedException();
         }
 
-        public int delete(Receipt item)
+        public int Delete(Receipt item)
         {
             throw new NotImplementedException();
         }
 
-        public List<Receipt> get()
+        public List<Receipt> Get()
         {
             throw new NotImplementedException();
         }
 
-        public int update(Receipt item)
+        public int Update(Receipt item)
         {
             throw new NotImplementedException();
         }
 
-        Receipt IRepository<Receipt>.get(int id)
+        Receipt IRepository<Receipt>.Get(int id)
         {
             throw new NotImplementedException();
         }

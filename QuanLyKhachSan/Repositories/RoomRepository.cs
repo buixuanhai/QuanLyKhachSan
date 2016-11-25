@@ -15,31 +15,37 @@ namespace QuanLyKhachSan.Repositories
         {
             _context = context;
         }
-        public int create(Room item)
+        public int Create(Room item)
         {
-            throw new NotImplementedException();
+            _context.Rooms.Add(item);
+            return _context.SaveChanges();
         }
 
-        public int delete(Room item)
+        public int Delete(Room item)
         {
-            throw new NotImplementedException();
+            //_context.Entry(item).State = System.Data.Entity.EntityState.Deleted;
+            Room r = Get(item.RoomId);
+            //_context.Rooms.Attach(r);
+            _context.Rooms.Remove( r);
+
+            return _context.SaveChanges();
         }
 
-        public List<Room> get()
+        public List<Room> Get()
         {
-            throw new NotImplementedException();
+            return _context.Rooms.ToList();
         }
 
-      
-
-        public int update(Room item)
+        public int Update(Room item)
         {
-            throw new NotImplementedException();
+            _context.Rooms.Attach(item);
+            return _context.SaveChanges();
+
         }
 
-        Room IRepository<Room>.get(int id)
+        public Room Get(int id)
         {
-            return new Room { RoomId = id };
+            return _context.Rooms.Find(id);
         }
     }
 }

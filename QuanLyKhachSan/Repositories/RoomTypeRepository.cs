@@ -9,29 +9,36 @@ namespace QuanLyKhachSan.Repositories
 {
     public class RoomTypeRepository : IRepository<RoomType>
     {
-        public int create(RoomType item)
+        private HotelContext _context;
+        public RoomTypeRepository(HotelContext context)
+        {
+            _context = context;
+        }
+        public int Create(RoomType item)
         {
             throw new NotImplementedException();
         }
 
-        public int delete(RoomType item)
+        public int Delete(RoomType item)
         {
             throw new NotImplementedException();
         }
 
-        public List<RoomType> get()
+        public List<RoomType> Get()
         {
             throw new NotImplementedException();
         }
 
-        public int update(RoomType item)
+        public RoomType Get(int id)
+        {
+            return _context.RoomTypes.SingleOrDefault(r => r.RoomTypeId == id);
+        }
+
+        public int Update(RoomType item)
         {
             throw new NotImplementedException();
         }
 
-        RoomType IRepository<RoomType>.get(int id)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
