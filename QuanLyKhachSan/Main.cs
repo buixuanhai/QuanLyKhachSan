@@ -15,37 +15,32 @@ namespace QuanLyKhachSan
 {
     public partial class Main : Form
     {
-        private IKernel kernel;
 
         public Main()
         {
             InitializeComponent();
-            kernel = new StandardKernel();
-            kernel.Bind<IRepository<Receipt>>().To<ReceiptRepository>();
-            kernel.Bind<IRepository<CheckIn>>().To<CheckInRepository>();
-            kernel.Bind<IRepository<Room>>().To<RoomRepository>();
-            kernel.Bind<IRepository<RoomType>>().To<RoomTypeRepository>();
+            Injection.Initialize();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            kernel.Get<CheckInForm>().Show();
+            Injection.kernel.Get<CheckInForm>().Show();
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            kernel.Get<RoomTypeForm>().Show();
+            Injection.kernel.Get<RoomTypeForm>().Show();
         }
 
         private void danhSachPhongButton_Click(object sender, EventArgs e)
         {
-            kernel.Get<RoomForm>().Show();
+            Injection.kernel.Get<RoomForm>().Show();
         }
 
         private void btnLapHoaDon_Click(object sender, EventArgs e)
         {
-            kernel.Get<ReceiptForm>().Show();
+            Injection.kernel.Get<ReceiptForm>().Show();
         }
 
         private void btnLapBaoCaoThang_Click(object sender, EventArgs e)

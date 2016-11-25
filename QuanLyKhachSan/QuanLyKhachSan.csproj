@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Injection.cs" />
     <Compile Include="ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -9,6 +9,12 @@ namespace QuanLyKhachSan.Repositories
 {
     public class RoomRepository : IRepository<Room>
     {
+        private HotelContext _context;
+
+        public RoomRepository(HotelContext context)
+        {
+            _context = context;
+        }
         public int create(Room item)
         {
             throw new NotImplementedException();
@@ -33,7 +39,7 @@ namespace QuanLyKhachSan.Repositories
 
         Room IRepository<Room>.get(int id)
         {
-            throw new NotImplementedException();
+            return new Room { RoomId = id };
         }
     }
 }

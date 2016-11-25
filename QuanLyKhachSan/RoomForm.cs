@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,10 @@ namespace QuanLyKhachSan
         {
             InitializeComponent();
             _repo = repo;
+
+            Debug.WriteLine(_repo.get(100).RoomId);
+
+            
         }
 
         private void donGiacomboBox_SelectedIndexChanged(object sender, EventArgs e)

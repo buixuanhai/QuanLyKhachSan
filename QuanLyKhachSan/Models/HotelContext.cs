@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyKhachSan.Models
 {
-    class HotelContext : DbContext
+    public class HotelContext : DbContext
     {
         public HotelContext(): base("DefaultConnection")
         {
