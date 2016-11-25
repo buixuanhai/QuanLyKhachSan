@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyKhachSan.Models;
+using QuanLyKhachSan.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +12,13 @@ using System.Windows.Forms;
 
 namespace QuanLyKhachSan
 {
-    public partial class HoaDonThanhToan : Form
+    public partial class ReceiptForm : Form
     {
-        public HoaDonThanhToan()
+        private IRepository<Receipt> _repo;
+        public ReceiptForm(IRepository<Receipt> repo)
         {
             InitializeComponent();
+            _repo = repo;
         }
 
         private void label2_Click(object sender, EventArgs e)

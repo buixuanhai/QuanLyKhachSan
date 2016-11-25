@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhachSan
 {
-    partial class HoaDonThanhToan
+    partial class ReceiptForm
     {
         /// <summary>
         /// Required designer variable.

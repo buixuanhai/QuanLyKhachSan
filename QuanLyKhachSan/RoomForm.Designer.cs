@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhachSan
 {
-    partial class DanhSachPhong
+    partial class RoomForm
     {
         /// <summary>
         /// Required designer variable.

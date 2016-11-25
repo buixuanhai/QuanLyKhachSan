@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhachSan
 {
-    partial class LoaiPhong
+    partial class RoomTypeForm
     {
         /// <summary>
         /// Required designer variable.

@@ -12,11 +12,11 @@ using System.Windows.Forms;
 
 namespace QuanLyKhachSan
 {
-    public partial class DanhSachPhong : Form
+    public partial class RoomForm : Form
     {
         private IRepository<Room> _repo;
 
-        public DanhSachPhong(IRepository<Room> repo)
+        public RoomForm(IRepository<Room> repo)
         {
             InitializeComponent();
             _repo = repo;

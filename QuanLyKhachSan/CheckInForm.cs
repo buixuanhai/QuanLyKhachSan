@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyKhachSan.Models;
+using QuanLyKhachSan.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,11 @@ namespace QuanLyKhachSan
 {
     public partial class CheckInForm : Form
     {
-        public CheckInForm()
+        private IRepository<CheckIn> _repo;
+        public CheckInForm(IRepository<CheckIn> repo)
         {
             InitializeComponent();
+            _repo = repo;
         }
 
         private void label1_Click(object sender, EventArgs e)

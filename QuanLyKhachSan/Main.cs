@@ -29,35 +29,28 @@ namespace QuanLyKhachSan
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form PhieuThuePhong = new PhieuThuePhong();
-            PhieuThuePhong.Show();
+            kernel.Get<CheckInForm>().Show();
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            {
-                Form LoaiPhong = new LoaiPhong();
-                LoaiPhong.Show();
-            }
-            //this.Close();
-
-
+            kernel.Get<RoomTypeForm>().Show();
         }
 
         private void danhSachPhongButton_Click(object sender, EventArgs e)
         {
-            kernel.Get<DanhSachPhong>().Show();
+            kernel.Get<RoomForm>().Show();
         }
 
         private void btnLapHoaDon_Click(object sender, EventArgs e)
         {
-            new HoaDonThanhToan().Show();
+            kernel.Get<ReceiptForm>().Show();
         }
 
         private void btnLapBaoCaoThang_Click(object sender, EventArgs e)
         {
-            new BaoCaoDoanhThu().Show();
+            new ReportForm().Show();
         }
 
         private void btnTraCuu_Click(object sender, EventArgs e)
