@@ -47,5 +47,10 @@ namespace QuanLyKhachSan.Repositories
         {
             return _context.Rooms.Find(id);
         }
+
+        public RoomType Get(object selectedItem)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

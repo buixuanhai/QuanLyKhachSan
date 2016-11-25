@@ -46,7 +46,7 @@
             // 
             this.soPhongTextBox.Location = new System.Drawing.Point(83, 28);
             this.soPhongTextBox.Name = "soPhongTextBox";
-            this.soPhongTextBox.Size = new System.Drawing.Size(100, 20);
+            this.soPhongTextBox.Size = new System.Drawing.Size(121, 20);
             this.soPhongTextBox.TabIndex = 1;
             // 
             // label1
@@ -72,12 +72,12 @@
             this.danhSachPhongGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.danhSachPhongGridView.Location = new System.Drawing.Point(238, 12);
             this.danhSachPhongGridView.Name = "danhSachPhongGridView";
-            this.danhSachPhongGridView.Size = new System.Drawing.Size(284, 147);
+            this.danhSachPhongGridView.Size = new System.Drawing.Size(460, 147);
             this.danhSachPhongGridView.TabIndex = 10;
             // 
             // xoaButton
             // 
-            this.xoaButton.Location = new System.Drawing.Point(285, 194);
+            this.xoaButton.Location = new System.Drawing.Point(344, 165);
             this.xoaButton.Name = "xoaButton";
             this.xoaButton.Size = new System.Drawing.Size(75, 23);
             this.xoaButton.TabIndex = 7;
@@ -87,7 +87,7 @@
             // 
             // luuButton
             // 
-            this.luuButton.Location = new System.Drawing.Point(447, 194);
+            this.luuButton.Location = new System.Drawing.Point(506, 165);
             this.luuButton.Name = "luuButton";
             this.luuButton.Size = new System.Drawing.Size(75, 23);
             this.luuButton.TabIndex = 9;
@@ -97,7 +97,7 @@
             // 
             // suaButton
             // 
-            this.suaButton.Location = new System.Drawing.Point(366, 194);
+            this.suaButton.Location = new System.Drawing.Point(425, 165);
             this.suaButton.Name = "suaButton";
             this.suaButton.Size = new System.Drawing.Size(75, 23);
             this.suaButton.TabIndex = 8;
@@ -107,9 +107,9 @@
             // 
             // themButton
             // 
-            this.themButton.Location = new System.Drawing.Point(83, 194);
+            this.themButton.Location = new System.Drawing.Point(82, 136);
             this.themButton.Name = "themButton";
-            this.themButton.Size = new System.Drawing.Size(75, 23);
+            this.themButton.Size = new System.Drawing.Size(121, 23);
             this.themButton.TabIndex = 6;
             this.themButton.Text = "Thêm";
             this.themButton.UseVisualStyleBackColor = true;
@@ -118,7 +118,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(2, 101);
+            this.label4.Location = new System.Drawing.Point(11, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 4;
@@ -153,7 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 261);
+            this.ClientSize = new System.Drawing.Size(710, 199);
             this.Controls.Add(this.cboRoomStatus);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.themButton);

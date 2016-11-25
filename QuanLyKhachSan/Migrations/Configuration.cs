@@ -1,5 +1,6 @@
-namespace QuanLyKhachSan.Migrations
+﻿namespace QuanLyKhachSan.Migrations
 {
+    using Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -13,6 +14,8 @@ namespace QuanLyKhachSan.Migrations
             AutomaticMigrationDataLossAllowed = true;
         }
 
+        
+        
         protected override void Seed(QuanLyKhachSan.Models.HotelContext context)
         {
             //  This method will be called after migrating to the latest version.
@@ -27,6 +30,20 @@ namespace QuanLyKhachSan.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            //context.RoomTypes.AddOrUpdate(new RoomType
+            //{
+            //    Name = "VIP",
+            //    Price = 200000
+            //});
+
+            //context.RoomTypes.AddOrUpdate(new RoomType
+            //{
+            //    Name = "Thường",
+            //    Price = 150000
+            //});
+
+            context.SaveChanges();
         }
     }
 }

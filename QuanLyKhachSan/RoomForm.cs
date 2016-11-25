@@ -22,8 +22,8 @@ namespace QuanLyKhachSan
         {
             InitializeComponent();
             this.RoomRepo = RoomRepo;
-           this.RoomTypeRepo = RoomTypeRepo;
-            
+            this.RoomTypeRepo = RoomTypeRepo;
+
         }
 
         private void donGiacomboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -50,7 +50,6 @@ namespace QuanLyKhachSan
         {
             LoadData();
             LoadCombo();
-
         }
 
         private DataTable DefaultValueRoomType()
@@ -76,7 +75,9 @@ namespace QuanLyKhachSan
         private void LoadCombo()
         {
             #region RoomType
-            loaiPhongComboBox.DataSource = DefaultValueRoomType();
+            List<RoomType> RoomTypes = RoomTypeRepo.Get();
+            //loaiPhongComboBox.DataSource = DefaultValueRoomType();
+            loaiPhongComboBox.DataSource = RoomTypes;
             loaiPhongComboBox.DisplayMember = "Name";
             loaiPhongComboBox.ValueMember = "RoomTypeId";
             loaiPhongComboBox.SelectedValue = 0;
@@ -99,22 +100,21 @@ namespace QuanLyKhachSan
 
         private void themButton_Click(object sender, EventArgs e)
         {
-            if (!ValiDateData()) return;
+            if (!ValidateData()) return;
 
-            Room objRoom = new Room();
-            Type _temp = typeof(RoomStatus);
-            objRoom.RoomCode = Convert.ToInt32(soPhongTextBox.Text.Trim());
-            int RoomTypeId = Convert.ToInt32(loaiPhongComboBox.SelectedValue);
-            RoomType objRoomtype = RoomTypeRepo.Get(RoomTypeId);
-            objRoom.RoomStatus = (RoomStatus) Enum.Parse(_temp,Convert.ToString( cboRoomStatus.SelectedValue));  //Enum.GetValues(typeof(RoomStatus));
-            if (RoomRepo.Create(objRoom) > 0)
+            Room Room = new Room();
+            Room.RoomCode = Convert.ToInt32(soPhongTextBox.Text.Trim());
+            //int RoomTypeId = Convert.ToInt32(loaiPhongComboBox.SelectedValue);
+            RoomType RoomType = (RoomType)loaiPhongComboBox.SelectedItem;
+            Room.RoomStatus = (RoomStatus)Enum.Parse(typeof(RoomStatus), Convert.ToString(cboRoomStatus.SelectedValue));  //Enum.GetValues(typeof(RoomStatus));
+            if (RoomRepo.Create(Room) > 0)
             {
                 LoadData();
             }
 
         }
 
-        private bool ValiDateData()
+        private bool ValidateData()
         {
             if (string.IsNullOrEmpty(soPhongTextBox.Text.Trim()))
             {
@@ -123,7 +123,7 @@ namespace QuanLyKhachSan
                 return false;
             }
 
-            if (Convert.ToInt32( loaiPhongComboBox.SelectedValue) == 0)
+            if (Convert.ToInt32(loaiPhongComboBox.SelectedValue) == 0)
             {
                 MessageBox.Show("Vui lòng nhập Loại phòng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 loaiPhongComboBox.Focus();
@@ -152,7 +152,7 @@ namespace QuanLyKhachSan
                     MessageBox.Show(ex.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 };
             }
-        
+
         }
 
         private void suaButton_Click(object sender, EventArgs e)

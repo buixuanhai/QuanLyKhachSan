@@ -16,17 +16,20 @@ namespace QuanLyKhachSan.Repositories
         }
         public int Create(RoomType item)
         {
-            throw new NotImplementedException();
+            _context.RoomTypes.Add(item);
+            return  _context.SaveChanges();
         }
 
         public int Delete(RoomType item)
         {
-            throw new NotImplementedException();
+            _context.RoomTypes.Attach(item);
+            _context.RoomTypes.Remove(item);
+            return _context.SaveChanges();
         }
 
         public List<RoomType> Get()
         {
-            throw new NotImplementedException();
+            return _context.RoomTypes.ToList();
         }
 
         public RoomType Get(int id)
@@ -36,7 +39,8 @@ namespace QuanLyKhachSan.Repositories
 
         public int Update(RoomType item)
         {
-            throw new NotImplementedException();
+            _context.RoomTypes.Attach(item);
+            return _context.SaveChanges();
         }
 
         
