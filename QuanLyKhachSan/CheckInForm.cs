@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyKhachSan
 {
-    public partial class PhieuThuePhong : Form
+    public partial class CheckInForm : Form
     {
-        public PhieuThuePhong()
+        public CheckInForm()
         {
             InitializeComponent();
         }

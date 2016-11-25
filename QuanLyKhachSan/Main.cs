@@ -29,16 +29,16 @@ namespace QuanLyKhachSan
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form form3 = new PhieuThuePhong();
-            form3.Show();
+            Form PhieuThuePhong = new PhieuThuePhong();
+            PhieuThuePhong.Show();
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             {
-                Form form2 = new LoaiPhong();
-                form2.Show();
+                Form LoaiPhong = new LoaiPhong();
+                LoaiPhong.Show();
             }
             //this.Close();
 

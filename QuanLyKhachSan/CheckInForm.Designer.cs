@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhachSan
 {
-    partial class PhieuThuePhong
+    partial class CheckInForm
     {
         /// <summary>
         /// Required designer variable.
