@@ -25,6 +25,7 @@ namespace QuanLyKhachSan.Models
         public RoomStatus RoomStatus { get; set; }
 
         public virtual RoomType RoomType { get;set;}
+        public virtual ICollection<CheckIn> CheckIns { get; set; }
 
 
 }

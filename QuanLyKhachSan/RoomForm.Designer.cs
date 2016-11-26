@@ -38,7 +38,7 @@
             this.themButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.loaiPhongComboBox = new System.Windows.Forms.ComboBox();
-            this.cboRoomStatus = new System.Windows.Forms.ComboBox();
+            this.tinhTrangPhongComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.danhSachPhongGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,24 +137,24 @@
             this.loaiPhongComboBox.Size = new System.Drawing.Size(121, 21);
             this.loaiPhongComboBox.TabIndex = 3;
             // 
-            // cboRoomStatus
+            // tinhTrangPhongComboBox
             // 
-            this.cboRoomStatus.FormattingEnabled = true;
-            this.cboRoomStatus.Items.AddRange(new object[] {
+            this.tinhTrangPhongComboBox.FormattingEnabled = true;
+            this.tinhTrangPhongComboBox.Items.AddRange(new object[] {
             "150 000",
             "170 000",
             "200 000"});
-            this.cboRoomStatus.Location = new System.Drawing.Point(83, 97);
-            this.cboRoomStatus.Name = "cboRoomStatus";
-            this.cboRoomStatus.Size = new System.Drawing.Size(121, 21);
-            this.cboRoomStatus.TabIndex = 5;
+            this.tinhTrangPhongComboBox.Location = new System.Drawing.Point(83, 97);
+            this.tinhTrangPhongComboBox.Name = "tinhTrangPhongComboBox";
+            this.tinhTrangPhongComboBox.Size = new System.Drawing.Size(121, 21);
+            this.tinhTrangPhongComboBox.TabIndex = 5;
             // 
             // RoomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 199);
-            this.Controls.Add(this.cboRoomStatus);
+            this.Controls.Add(this.tinhTrangPhongComboBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.themButton);
             this.Controls.Add(this.suaButton);
@@ -186,6 +186,6 @@
         private System.Windows.Forms.Button themButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox loaiPhongComboBox;
-        private System.Windows.Forms.ComboBox cboRoomStatus;
+        private System.Windows.Forms.ComboBox tinhTrangPhongComboBox;
     }
 }

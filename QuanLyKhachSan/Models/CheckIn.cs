@@ -20,5 +20,7 @@ namespace QuanLyKhachSan.Models
         public int CustomerIdentityNumber { get; set; }
         public virtual Room Room { get; set; }
 
+        public virtual Receipt Receipt { get; set; }
+
     }
 }

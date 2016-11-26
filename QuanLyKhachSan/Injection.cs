@@ -15,10 +15,10 @@ namespace QuanLyKhachSan
 
         public static void Initialize()
         {
-            kernel.Bind<HotelContext>().To<HotelContext>();
+            kernel.Bind<HotelContext>().To<HotelContext>().InSingletonScope();
             kernel.Bind<IRepository<Receipt>>().To<ReceiptRepository>();
             kernel.Bind<IRepository<CheckIn>>().To<CheckInRepository>();
-            kernel.Bind<IRepository<Room>>().To<RoomRepository>();
+            kernel.Bind<IRepository<Room>>().To<RoomRepository>().InSingletonScope();
             kernel.Bind<IRepository<RoomType>>().To<RoomTypeRepository>();
         }
     }

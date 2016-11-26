@@ -16,6 +16,11 @@ namespace QuanLyKhachSan.Models
 
         public virtual ICollection<Room> Rooms { get; set; }
 
+        public override string ToString()
+        {
+            return Name;
+        }
+
     }
 
 

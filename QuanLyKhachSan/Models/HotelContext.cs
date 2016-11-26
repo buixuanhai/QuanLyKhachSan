@@ -18,6 +18,16 @@ namespace QuanLyKhachSan.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Entity<Room>()
+                .HasMany(r => r.CheckIns)
+                .WithRequired(c => c.Room)
+                .WillCascadeOnDelete();
+
+            modelBuilder.Entity<CheckIn>()
+                .HasOptional(c => c.Receipt)
+                .WithRequired(r => r.CheckIn)
+                .WillCascadeOnDelete();
+
         }
 
         public DbSet<Room> Rooms { get; set; }

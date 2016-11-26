@@ -33,6 +33,30 @@ namespace QuanLyKhachSan
 
         private void luuButton_Click(object sender, EventArgs e)
         {
+            if (!IsDataValid()) return;
+
+            int intRoomId = Convert.ToInt32(danhSachPhongGridView.SelectedCells[0].Value);
+            int RoomCode = Convert.ToInt32(soPhongTextBox.Text.Trim());
+            RoomType RoomType = (RoomType)loaiPhongComboBox.SelectedItem;
+            RoomStatus RoomStatus = (RoomStatus)Enum.Parse(typeof(RoomStatus), tinhTrangPhongComboBox.Text);
+
+            Room Room = RoomRepo.Get(intRoomId);
+
+            if (Room != null)
+            {
+                Room.RoomCode = RoomCode;
+                Room.RoomType = RoomType;
+                Room.RoomStatus = RoomStatus;
+                try
+                {
+                    RoomRepo.Update(Room);
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                };
+            }
 
         }
 
@@ -80,11 +104,11 @@ namespace QuanLyKhachSan
             loaiPhongComboBox.DataSource = RoomTypes;
             loaiPhongComboBox.DisplayMember = "Name";
             loaiPhongComboBox.ValueMember = "RoomTypeId";
-            loaiPhongComboBox.SelectedValue = 0;
+            loaiPhongComboBox.SelectedValue = 1;
             #endregion
 
             #region RoomStatus
-            cboRoomStatus.DataSource = Enum.GetValues(typeof(RoomStatus));
+            tinhTrangPhongComboBox.DataSource = Enum.GetValues(typeof(RoomStatus));
             #endregion
         }
 
@@ -94,27 +118,36 @@ namespace QuanLyKhachSan
             if (lstData != null)
             {
                 danhSachPhongGridView.DataSource = lstData;
+                danhSachPhongGridView.Columns[4].Visible = false;
+
+                danhSachPhongGridView.Columns[0].HeaderText = "Id";
+                danhSachPhongGridView.Columns[0].Width = 40;
+                danhSachPhongGridView.Columns[1].HeaderText = "Mã phòng";
+                danhSachPhongGridView.Columns[2].HeaderText = "Tình trạng phòng";
+                danhSachPhongGridView.Columns[2].Width = 150;
+                danhSachPhongGridView.Columns[3].HeaderText = "Loại phòng";
             }
 
         }
 
         private void themButton_Click(object sender, EventArgs e)
         {
-            if (!ValidateData()) return;
+            if (!IsDataValid()) return;
 
-            Room Room = new Room();
-            Room.RoomCode = Convert.ToInt32(soPhongTextBox.Text.Trim());
-            //int RoomTypeId = Convert.ToInt32(loaiPhongComboBox.SelectedValue);
+            int RoomCode = Convert.ToInt32(soPhongTextBox.Text.Trim());
             RoomType RoomType = (RoomType)loaiPhongComboBox.SelectedItem;
-            Room.RoomStatus = (RoomStatus)Enum.Parse(typeof(RoomStatus), Convert.ToString(cboRoomStatus.SelectedValue));  //Enum.GetValues(typeof(RoomStatus));
-            if (RoomRepo.Create(Room) > 0)
-            {
-                LoadData();
-            }
 
+            RoomRepo.Create(new Room
+            {
+                RoomCode = RoomCode,
+                RoomType = RoomType,
+                RoomStatus = RoomStatus.Empty
+            });
+
+            LoadData();
         }
 
-        private bool ValidateData()
+        private bool IsDataValid()
         {
             if (string.IsNullOrEmpty(soPhongTextBox.Text.Trim()))
             {
@@ -135,9 +168,7 @@ namespace QuanLyKhachSan
 
         private void xoaButton_Click(object sender, EventArgs e)
         {
-            //if (!danhSachPhongGridView.Focused) return;
             int intRoomId = Convert.ToInt32(danhSachPhongGridView.SelectedCells[0].Value);
-
 
             Room room = RoomRepo.Get(intRoomId);
             if (room != null)
@@ -157,7 +188,11 @@ namespace QuanLyKhachSan
 
         private void suaButton_Click(object sender, EventArgs e)
         {
-
+            int RoomID = Convert.ToInt32(danhSachPhongGridView.SelectedCells[0].Value);
+            Room Room = RoomRepo.Get(RoomID);
+            soPhongTextBox.Text = Room.RoomCode.ToString();
+            loaiPhongComboBox.SelectedValue = Room.RoomType.RoomTypeId;
+            tinhTrangPhongComboBox.SelectedItem = Room.RoomStatus;
         }
     }
 }

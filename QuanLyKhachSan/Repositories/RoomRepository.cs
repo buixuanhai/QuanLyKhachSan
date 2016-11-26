@@ -23,9 +23,7 @@ namespace QuanLyKhachSan.Repositories
 
         public int Delete(Room item)
         {
-            //_context.Entry(item).State = System.Data.Entity.EntityState.Deleted;
             Room r = Get(item.RoomId);
-            //_context.Rooms.Attach(r);
             _context.Rooms.Remove( r);
 
             return _context.SaveChanges();
@@ -46,11 +44,6 @@ namespace QuanLyKhachSan.Repositories
         public Room Get(int id)
         {
             return _context.Rooms.Find(id);
-        }
-
-        public RoomType Get(object selectedItem)
-        {
-            throw new NotImplementedException();
         }
     }
 }
