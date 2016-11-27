@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 namespace QuanLyKhachSan.Models
 {
 
+    public enum CustomerType
+    {
+        Domestic, 
+        International
+    }
 
     public class CheckIn
     {
@@ -16,8 +21,9 @@ namespace QuanLyKhachSan.Models
         }
 
         public int CheckInId { get; set; }
-        public DateTime StartDate { get; set; }
+        public DateTime CheckInDate { get; set; }
         public int CustomerIdentityNumber { get; set; }
+        public CustomerType CustomerType { get; set; }
         public virtual Room Room { get; set; }
 
         public virtual Receipt Receipt { get; set; }

@@ -32,8 +32,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.phongTextBox = new System.Windows.Forms.TextBox();
-            this.cMDNTextBox = new System.Windows.Forms.TextBox();
+            this.CMNDTextBox = new System.Windows.Forms.TextBox();
             this.loaiKhachComboBox = new System.Windows.Forms.ComboBox();
             this.phieuThuePhongGridView = new System.Windows.Forms.DataGridView();
             this.themButton = new System.Windows.Forms.Button();
@@ -41,6 +40,7 @@
             this.suaButton = new System.Windows.Forms.Button();
             this.luuButton = new System.Windows.Forms.Button();
             this.khachHangTextBox = new System.Windows.Forms.TextBox();
+            this.phongComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.phieuThuePhongGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,19 +81,12 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "CMND";
             // 
-            // phongTextBox
+            // CMNDTextBox
             // 
-            this.phongTextBox.Location = new System.Drawing.Point(101, 27);
-            this.phongTextBox.Name = "phongTextBox";
-            this.phongTextBox.Size = new System.Drawing.Size(121, 20);
-            this.phongTextBox.TabIndex = 6;
-            // 
-            // cMDNTextBox
-            // 
-            this.cMDNTextBox.Location = new System.Drawing.Point(101, 140);
-            this.cMDNTextBox.Name = "cMDNTextBox";
-            this.cMDNTextBox.Size = new System.Drawing.Size(121, 20);
-            this.cMDNTextBox.TabIndex = 9;
+            this.CMNDTextBox.Location = new System.Drawing.Point(101, 140);
+            this.CMNDTextBox.Name = "CMNDTextBox";
+            this.CMNDTextBox.Size = new System.Drawing.Size(121, 20);
+            this.CMNDTextBox.TabIndex = 9;
             // 
             // loaiKhachComboBox
             // 
@@ -158,11 +151,23 @@
             this.khachHangTextBox.Size = new System.Drawing.Size(121, 20);
             this.khachHangTextBox.TabIndex = 17;
             // 
+            // phongComboBox
+            // 
+            this.phongComboBox.FormattingEnabled = true;
+            this.phongComboBox.Items.AddRange(new object[] {
+            "Nội địa",
+            "Nước ngoài"});
+            this.phongComboBox.Location = new System.Drawing.Point(101, 28);
+            this.phongComboBox.Name = "phongComboBox";
+            this.phongComboBox.Size = new System.Drawing.Size(121, 21);
+            this.phongComboBox.TabIndex = 18;
+            // 
             // CheckInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(926, 293);
+            this.Controls.Add(this.phongComboBox);
             this.Controls.Add(this.khachHangTextBox);
             this.Controls.Add(this.luuButton);
             this.Controls.Add(this.suaButton);
@@ -170,8 +175,7 @@
             this.Controls.Add(this.themButton);
             this.Controls.Add(this.phieuThuePhongGridView);
             this.Controls.Add(this.loaiKhachComboBox);
-            this.Controls.Add(this.cMDNTextBox);
-            this.Controls.Add(this.phongTextBox);
+            this.Controls.Add(this.CMNDTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -190,8 +194,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox phongTextBox;
-        private System.Windows.Forms.TextBox cMDNTextBox;
+        private System.Windows.Forms.TextBox CMNDTextBox;
         private System.Windows.Forms.ComboBox loaiKhachComboBox;
         private System.Windows.Forms.DataGridView phieuThuePhongGridView;
         private System.Windows.Forms.Button themButton;
@@ -199,5 +202,6 @@
         private System.Windows.Forms.Button suaButton;
         private System.Windows.Forms.Button luuButton;
         private System.Windows.Forms.TextBox khachHangTextBox;
+        private System.Windows.Forms.ComboBox phongComboBox;
     }
 }
