@@ -122,5 +122,43 @@ namespace QuanLyKhachSan
             }
 
         }
+
+        private void suaButton_Click(object sender, EventArgs e)
+        {
+            int CheckInId = (int)phieuThuePhongGridView.Rows[phieuThuePhongGridView.CurrentCell.RowIndex].Cells[0].Value;
+            CheckIn CheckIn = CheckInRepo.Get(CheckInId);
+
+            phongComboBox.SelectedItem = CheckIn.Room;
+            khachHangTextBox.Text = CheckIn.CusTomerName;
+            loaiKhachComboBox.SelectedItem = CheckIn.CustomerType;
+            CMNDTextBox.Text = CheckIn.CustomerIdentityNumber;
+
+
+        }
+
+        private void luuButton_Click(object sender, EventArgs e)
+        {
+            Room Room = RoomRepo.Get(((Room)phongComboBox.SelectedItem).RoomId);
+            string CustomerName = khachHangTextBox.Text;
+            CustomerType CustomerType = (CustomerType)loaiKhachComboBox.SelectedItem;
+            string CustomerIdentityNumber = CMNDTextBox.Text;
+
+            int CheckInId = (int)phieuThuePhongGridView.Rows[phieuThuePhongGridView.CurrentCell.RowIndex].Cells[0].Value;
+            CheckIn CheckIn = CheckInRepo.Get(CheckInId);
+            CheckIn.Room = Room;
+            CheckIn.CusTomerName = CustomerName;
+            CheckIn.CustomerType = CustomerType;
+            CheckIn.CustomerIdentityNumber = CustomerIdentityNumber;
+
+            try
+            {
+                CheckInRepo.Update(CheckIn);
+                LoadData();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

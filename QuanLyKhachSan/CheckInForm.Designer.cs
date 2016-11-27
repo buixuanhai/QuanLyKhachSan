@@ -136,6 +136,7 @@
             this.suaButton.TabIndex = 15;
             this.suaButton.Text = "Sửa";
             this.suaButton.UseVisualStyleBackColor = true;
+            this.suaButton.Click += new System.EventHandler(this.suaButton_Click);
             // 
             // luuButton
             // 
@@ -145,6 +146,7 @@
             this.luuButton.TabIndex = 16;
             this.luuButton.Text = "Lưu";
             this.luuButton.UseVisualStyleBackColor = true;
+            this.luuButton.Click += new System.EventHandler(this.luuButton_Click);
             // 
             // khachHangTextBox
             // 

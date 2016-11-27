@@ -29,7 +29,7 @@ namespace QuanLyKhachSan.Models
 
         public override string ToString()
         {
-            return RoomId.ToString();
+            return RoomCode.ToString();
         }
     }
 }
