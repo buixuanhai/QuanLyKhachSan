@@ -107,6 +107,19 @@ namespace QuanLyKhachSan
 
         private void xoaButton_Click(object sender, EventArgs e)
         {
+            int CheckInId = (int)phieuThuePhongGridView.Rows[phieuThuePhongGridView.CurrentCell.RowIndex].Cells[0].Value;
+            CheckIn CheckIn = CheckInRepo.Get(CheckInId);
+
+            try
+            {
+                CheckInRepo.Delete(CheckIn);
+                LoadData();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
 
         }
     }
