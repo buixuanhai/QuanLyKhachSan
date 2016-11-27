@@ -130,6 +130,7 @@
             this.luuButton.TabIndex = 15;
             this.luuButton.Text = "Lưu";
             this.luuButton.UseVisualStyleBackColor = true;
+            this.luuButton.Click += new System.EventHandler(this.luuButton_Click);
             // 
             // loaiPhongGridView
             // 

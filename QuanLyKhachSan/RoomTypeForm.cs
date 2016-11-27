@@ -24,7 +24,17 @@ namespace QuanLyKhachSan
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                int RoomTypeId = Convert.ToInt32(loaiPhongGridView.SelectedCells[0].Value);
+                RoomType RoomType = _repo.Get(RoomTypeId);
+                loaiPhongTextBox.Text = RoomType.Name;
+                donGiaTextBox.Text = RoomType.Price.ToString();
+            }
+            catch (Exception)
+            {
+                Debug.Write(e.ToString());
+            }
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -90,6 +100,27 @@ namespace QuanLyKhachSan
             {
                 Debug.Write(e.ToString());
             }
+        }
+
+        private void luuButton_Click(object sender, EventArgs e)
+        {
+            int RoomTypeId = Convert.ToInt32(loaiPhongGridView.SelectedCells[0].Value);
+            string RoomTypeName = loaiPhongTextBox.Text;
+            decimal Price = Convert.ToDecimal(donGiaTextBox.Text);
+
+            try
+            {
+                RoomType RoomType = _repo.Get(RoomTypeId);
+                RoomType.Name = RoomTypeName;
+                RoomType.Price = Price;
+                _repo.Update(RoomType);
+                LoadData();
+            }
+            catch (Exception)
+            {
+                Debug.Write(e);
+            }
+
         }
     }
 }
