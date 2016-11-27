@@ -116,6 +116,7 @@
             this.themButton.TabIndex = 13;
             this.themButton.Text = "Thêm";
             this.themButton.UseVisualStyleBackColor = true;
+            this.themButton.Click += new System.EventHandler(this.themButton_Click);
             // 
             // xoaButton
             // 
@@ -125,6 +126,7 @@
             this.xoaButton.TabIndex = 14;
             this.xoaButton.Text = "Xóa";
             this.xoaButton.UseVisualStyleBackColor = true;
+            this.xoaButton.Click += new System.EventHandler(this.xoaButton_Click);
             // 
             // suaButton
             // 
@@ -182,6 +184,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CheckInForm";
             this.Text = "Phiếu thuê phòng";
+            this.Load += new System.EventHandler(this.CheckInForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.phieuThuePhongGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

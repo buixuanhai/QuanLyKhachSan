@@ -22,7 +22,8 @@ namespace QuanLyKhachSan.Models
 
         public int CheckInId { get; set; }
         public DateTime CheckInDate { get; set; }
-        public int CustomerIdentityNumber { get; set; }
+        public string CustomerIdentityNumber { get; set; }
+        public string CusTomerName { get; set; }
         public CustomerType CustomerType { get; set; }
         public virtual Room Room { get; set; }
 

@@ -24,9 +24,12 @@ namespace QuanLyKhachSan.Models
         public int RoomCode { get; set; }
         public RoomStatus RoomStatus { get; set; }
 
-        public virtual RoomType RoomType { get;set;}
+        public virtual RoomType RoomType { get; set; }
         public virtual ICollection<CheckIn> CheckIns { get; set; }
 
-
-}
+        public override string ToString()
+        {
+            return RoomId.ToString();
+        }
+    }
 }
