@@ -4,6 +4,7 @@
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
+    using System.Diagnostics;
     using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<QuanLyKhachSan.Models.HotelContext>
@@ -14,8 +15,8 @@
             AutomaticMigrationDataLossAllowed = true;
         }
 
-        
-        
+
+
         protected override void Seed(QuanLyKhachSan.Models.HotelContext context)
         {
             //  This method will be called after migrating to the latest version.
@@ -31,17 +32,29 @@
             //    );
             //
 
-            //context.RoomTypes.AddOrUpdate(new RoomType
-            //{
-            //    Name = "VIP",
-            //    Price = 200000
-            //});
+           
 
-            //context.RoomTypes.AddOrUpdate(new RoomType
-            //{
-            //    Name = "Thường",
-            //    Price = 150000
-            //});
+            context.Rooms.AddOrUpdate(new Room
+            {
+                RoomCode = 101,
+                RoomType = new RoomType
+                {
+                    Name = "Thường",
+                    Price = 100000
+                }
+            });
+
+            context.Rooms.AddOrUpdate(new Room
+            {
+                RoomCode = 101,
+                RoomType = new RoomType
+                {
+                    Name = "Vip",
+                    Price = 200000
+                }
+            });
+
+
 
             context.SaveChanges();
         }

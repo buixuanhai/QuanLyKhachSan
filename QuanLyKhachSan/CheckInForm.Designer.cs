@@ -41,6 +41,7 @@
             this.luuButton = new System.Windows.Forms.Button();
             this.khachHangTextBox = new System.Windows.Forms.TextBox();
             this.phongComboBox = new System.Windows.Forms.ComboBox();
+            this.thanhToanButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.phieuThuePhongGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,7 +87,7 @@
             this.CMNDTextBox.Location = new System.Drawing.Point(101, 140);
             this.CMNDTextBox.Name = "CMNDTextBox";
             this.CMNDTextBox.Size = new System.Drawing.Size(121, 20);
-            this.CMNDTextBox.TabIndex = 9;
+            this.CMNDTextBox.TabIndex = 3;
             // 
             // loaiKhachComboBox
             // 
@@ -97,7 +98,7 @@
             this.loaiKhachComboBox.Location = new System.Drawing.Point(101, 104);
             this.loaiKhachComboBox.Name = "loaiKhachComboBox";
             this.loaiKhachComboBox.Size = new System.Drawing.Size(121, 21);
-            this.loaiKhachComboBox.TabIndex = 11;
+            this.loaiKhachComboBox.TabIndex = 2;
             this.loaiKhachComboBox.SelectedIndexChanged += new System.EventHandler(this.loaiKhachcomboBox_SelectedIndexChanged);
             // 
             // phieuThuePhongGridView
@@ -106,14 +107,14 @@
             this.phieuThuePhongGridView.Location = new System.Drawing.Point(241, 27);
             this.phieuThuePhongGridView.Name = "phieuThuePhongGridView";
             this.phieuThuePhongGridView.Size = new System.Drawing.Size(673, 208);
-            this.phieuThuePhongGridView.TabIndex = 12;
+            this.phieuThuePhongGridView.TabIndex = 5;
             // 
             // themButton
             // 
             this.themButton.Location = new System.Drawing.Point(101, 178);
             this.themButton.Name = "themButton";
             this.themButton.Size = new System.Drawing.Size(121, 23);
-            this.themButton.TabIndex = 13;
+            this.themButton.TabIndex = 4;
             this.themButton.Text = "Thêm";
             this.themButton.UseVisualStyleBackColor = true;
             this.themButton.Click += new System.EventHandler(this.themButton_Click);
@@ -123,7 +124,7 @@
             this.xoaButton.Location = new System.Drawing.Point(454, 250);
             this.xoaButton.Name = "xoaButton";
             this.xoaButton.Size = new System.Drawing.Size(75, 23);
-            this.xoaButton.TabIndex = 14;
+            this.xoaButton.TabIndex = 6;
             this.xoaButton.Text = "Xóa";
             this.xoaButton.UseVisualStyleBackColor = true;
             this.xoaButton.Click += new System.EventHandler(this.xoaButton_Click);
@@ -133,7 +134,7 @@
             this.suaButton.Location = new System.Drawing.Point(535, 250);
             this.suaButton.Name = "suaButton";
             this.suaButton.Size = new System.Drawing.Size(75, 23);
-            this.suaButton.TabIndex = 15;
+            this.suaButton.TabIndex = 7;
             this.suaButton.Text = "Sửa";
             this.suaButton.UseVisualStyleBackColor = true;
             this.suaButton.Click += new System.EventHandler(this.suaButton_Click);
@@ -143,7 +144,7 @@
             this.luuButton.Location = new System.Drawing.Point(616, 250);
             this.luuButton.Name = "luuButton";
             this.luuButton.Size = new System.Drawing.Size(75, 23);
-            this.luuButton.TabIndex = 16;
+            this.luuButton.TabIndex = 8;
             this.luuButton.Text = "Lưu";
             this.luuButton.UseVisualStyleBackColor = true;
             this.luuButton.Click += new System.EventHandler(this.luuButton_Click);
@@ -153,7 +154,7 @@
             this.khachHangTextBox.Location = new System.Drawing.Point(101, 66);
             this.khachHangTextBox.Name = "khachHangTextBox";
             this.khachHangTextBox.Size = new System.Drawing.Size(121, 20);
-            this.khachHangTextBox.TabIndex = 17;
+            this.khachHangTextBox.TabIndex = 1;
             // 
             // phongComboBox
             // 
@@ -164,13 +165,24 @@
             this.phongComboBox.Location = new System.Drawing.Point(101, 28);
             this.phongComboBox.Name = "phongComboBox";
             this.phongComboBox.Size = new System.Drawing.Size(121, 21);
-            this.phongComboBox.TabIndex = 18;
+            this.phongComboBox.TabIndex = 0;
+            // 
+            // thanhToanButton
+            // 
+            this.thanhToanButton.Location = new System.Drawing.Point(698, 249);
+            this.thanhToanButton.Name = "thanhToanButton";
+            this.thanhToanButton.Size = new System.Drawing.Size(75, 23);
+            this.thanhToanButton.TabIndex = 9;
+            this.thanhToanButton.Text = "Thanh toán";
+            this.thanhToanButton.UseVisualStyleBackColor = true;
+            this.thanhToanButton.Click += new System.EventHandler(this.thanhToanButton_Click);
             // 
             // CheckInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(926, 293);
+            this.Controls.Add(this.thanhToanButton);
             this.Controls.Add(this.phongComboBox);
             this.Controls.Add(this.khachHangTextBox);
             this.Controls.Add(this.luuButton);
@@ -208,5 +220,6 @@
         private System.Windows.Forms.Button luuButton;
         private System.Windows.Forms.TextBox khachHangTextBox;
         private System.Windows.Forms.ComboBox phongComboBox;
+        private System.Windows.Forms.Button thanhToanButton;
     }
 }

@@ -69,7 +69,7 @@
             // 
             // hoaDonThanhToanButton
             // 
-            this.hoaDonThanhToanButton.Location = new System.Drawing.Point(49, 139);
+            this.hoaDonThanhToanButton.Location = new System.Drawing.Point(49, 138);
             this.hoaDonThanhToanButton.Name = "hoaDonThanhToanButton";
             this.hoaDonThanhToanButton.Size = new System.Drawing.Size(144, 23);
             this.hoaDonThanhToanButton.TabIndex = 3;

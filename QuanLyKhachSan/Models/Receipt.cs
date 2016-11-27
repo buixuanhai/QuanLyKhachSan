@@ -19,7 +19,5 @@ namespace QuanLyKhachSan.Models
         public decimal Total { get; set; }
 
         public virtual CheckIn CheckIn { get; set; }
-
-
     }
 }

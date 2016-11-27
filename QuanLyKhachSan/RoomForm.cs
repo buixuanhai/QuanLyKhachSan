@@ -188,8 +188,8 @@ namespace QuanLyKhachSan
 
         private void suaButton_Click(object sender, EventArgs e)
         {
-            int RoomID = Convert.ToInt32(danhSachPhongGridView.SelectedCells[0].Value);
-            Room Room = RoomRepo.Get(RoomID);
+            int RoomId = Convert.ToInt32(danhSachPhongGridView.SelectedCells[0].Value);
+            Room Room = RoomRepo.Get(RoomId);
             soPhongTextBox.Text = Room.RoomCode.ToString();
             loaiPhongComboBox.SelectedValue = Room.RoomType.RoomTypeId;
             tinhTrangPhongComboBox.SelectedItem = Room.RoomStatus;
