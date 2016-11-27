@@ -42,7 +42,7 @@
             this.loaiPhongButton.Location = new System.Drawing.Point(49, 57);
             this.loaiPhongButton.Name = "loaiPhongButton";
             this.loaiPhongButton.Size = new System.Drawing.Size(144, 23);
-            this.loaiPhongButton.TabIndex = 0;
+            this.loaiPhongButton.TabIndex = 1;
             this.loaiPhongButton.Text = "Loại phòng";
             this.loaiPhongButton.UseVisualStyleBackColor = true;
             this.loaiPhongButton.Click += new System.EventHandler(this.button1_Click);
@@ -52,7 +52,7 @@
             this.phieuThuePhongButton.Location = new System.Drawing.Point(49, 98);
             this.phieuThuePhongButton.Name = "phieuThuePhongButton";
             this.phieuThuePhongButton.Size = new System.Drawing.Size(144, 23);
-            this.phieuThuePhongButton.TabIndex = 1;
+            this.phieuThuePhongButton.TabIndex = 2;
             this.phieuThuePhongButton.Text = "Phiếu Thuê Phòng";
             this.phieuThuePhongButton.UseVisualStyleBackColor = true;
             this.phieuThuePhongButton.Click += new System.EventHandler(this.button2_Click);
@@ -62,7 +62,7 @@
             this.traCuuButton.Location = new System.Drawing.Point(49, 216);
             this.traCuuButton.Name = "traCuuButton";
             this.traCuuButton.Size = new System.Drawing.Size(144, 23);
-            this.traCuuButton.TabIndex = 2;
+            this.traCuuButton.TabIndex = 5;
             this.traCuuButton.Text = "Tra Cứu";
             this.traCuuButton.UseVisualStyleBackColor = true;
             this.traCuuButton.Click += new System.EventHandler(this.btnTraCuu_Click);
@@ -92,7 +92,7 @@
             this.thayDoiQuyDinhButton.Location = new System.Drawing.Point(49, 255);
             this.thayDoiQuyDinhButton.Name = "thayDoiQuyDinhButton";
             this.thayDoiQuyDinhButton.Size = new System.Drawing.Size(144, 23);
-            this.thayDoiQuyDinhButton.TabIndex = 5;
+            this.thayDoiQuyDinhButton.TabIndex = 6;
             this.thayDoiQuyDinhButton.Text = "Thay Đổi Quy Định";
             this.thayDoiQuyDinhButton.UseVisualStyleBackColor = true;
             // 
@@ -101,7 +101,7 @@
             this.danhSachPhongButton.Location = new System.Drawing.Point(49, 13);
             this.danhSachPhongButton.Name = "danhSachPhongButton";
             this.danhSachPhongButton.Size = new System.Drawing.Size(144, 23);
-            this.danhSachPhongButton.TabIndex = 6;
+            this.danhSachPhongButton.TabIndex = 0;
             this.danhSachPhongButton.Text = "Danh sách phòng";
             this.danhSachPhongButton.UseVisualStyleBackColor = true;
             this.danhSachPhongButton.Click += new System.EventHandler(this.danhSachPhongButton_Click);

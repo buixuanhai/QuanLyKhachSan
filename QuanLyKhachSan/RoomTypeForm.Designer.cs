@@ -33,7 +33,7 @@
             this.suaButton = new System.Windows.Forms.Button();
             this.txtGhiChu = new System.Windows.Forms.Label();
             this.loaiPhongTextBox = new System.Windows.Forms.TextBox();
-            this.donGianTextBox = new System.Windows.Forms.TextBox();
+            this.donGiaTextBox = new System.Windows.Forms.TextBox();
             this.txtPhong = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ghiChuTextBox = new System.Windows.Forms.TextBox();
@@ -60,6 +60,7 @@
             this.xoaButton.TabIndex = 5;
             this.xoaButton.Text = "Xóa";
             this.xoaButton.UseVisualStyleBackColor = true;
+            this.xoaButton.Click += new System.EventHandler(this.xoaButton_Click);
             // 
             // suaButton
             // 
@@ -74,7 +75,7 @@
             // txtGhiChu
             // 
             this.txtGhiChu.AutoSize = true;
-            this.txtGhiChu.Location = new System.Drawing.Point(29, 105);
+            this.txtGhiChu.Location = new System.Drawing.Point(59, 105);
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(45, 13);
             this.txtGhiChu.TabIndex = 9;
@@ -88,26 +89,26 @@
             this.loaiPhongTextBox.Size = new System.Drawing.Size(201, 20);
             this.loaiPhongTextBox.TabIndex = 10;
             // 
-            // donGianTextBox
+            // donGiaTextBox
             // 
-            this.donGianTextBox.Location = new System.Drawing.Point(130, 44);
-            this.donGianTextBox.Name = "donGianTextBox";
-            this.donGianTextBox.Size = new System.Drawing.Size(201, 20);
-            this.donGianTextBox.TabIndex = 11;
+            this.donGiaTextBox.Location = new System.Drawing.Point(130, 44);
+            this.donGiaTextBox.Name = "donGiaTextBox";
+            this.donGiaTextBox.Size = new System.Drawing.Size(201, 20);
+            this.donGiaTextBox.TabIndex = 11;
             // 
             // txtPhong
             // 
             this.txtPhong.AutoSize = true;
-            this.txtPhong.Location = new System.Drawing.Point(28, 21);
+            this.txtPhong.Location = new System.Drawing.Point(26, 21);
             this.txtPhong.Name = "txtPhong";
-            this.txtPhong.Size = new System.Drawing.Size(60, 13);
+            this.txtPhong.Size = new System.Drawing.Size(78, 13);
             this.txtPhong.TabIndex = 12;
-            this.txtPhong.Text = "Loại phòng";
+            this.txtPhong.Text = "Tên loại phòng";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 47);
+            this.label1.Location = new System.Drawing.Point(60, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 13;
@@ -138,7 +139,7 @@
             this.loaiPhongGridView.Size = new System.Drawing.Size(359, 148);
             this.loaiPhongGridView.TabIndex = 16;
             // 
-            // LoaiPhong
+            // RoomTypeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,13 +149,13 @@
             this.Controls.Add(this.ghiChuTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPhong);
-            this.Controls.Add(this.donGianTextBox);
+            this.Controls.Add(this.donGiaTextBox);
             this.Controls.Add(this.loaiPhongTextBox);
             this.Controls.Add(this.txtGhiChu);
             this.Controls.Add(this.suaButton);
             this.Controls.Add(this.xoaButton);
             this.Controls.Add(this.themButton);
-            this.Name = "LoaiPhong";
+            this.Name = "RoomTypeForm";
             this.Text = "Loại phòng";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.loaiPhongGridView)).EndInit();
@@ -169,7 +170,7 @@
         private System.Windows.Forms.Button suaButton;
         private System.Windows.Forms.Label txtGhiChu;
         private System.Windows.Forms.TextBox loaiPhongTextBox;
-        private System.Windows.Forms.TextBox donGianTextBox;
+        private System.Windows.Forms.TextBox donGiaTextBox;
         private System.Windows.Forms.Label txtPhong;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox ghiChuTextBox;
