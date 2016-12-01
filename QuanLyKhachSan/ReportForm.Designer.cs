@@ -84,7 +84,7 @@
             this.baoCaoDoanhThuGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.baoCaoDoanhThuGridView.Location = new System.Drawing.Point(298, 24);
             this.baoCaoDoanhThuGridView.Name = "baoCaoDoanhThuGridView";
-            this.baoCaoDoanhThuGridView.Size = new System.Drawing.Size(364, 301);
+            this.baoCaoDoanhThuGridView.Size = new System.Drawing.Size(609, 301);
             this.baoCaoDoanhThuGridView.TabIndex = 8;
             // 
             // label2
@@ -104,12 +104,13 @@
             this.viewButon.TabIndex = 9;
             this.viewButon.Text = "Xem";
             this.viewButon.UseVisualStyleBackColor = true;
+            this.viewButon.Click += new System.EventHandler(this.viewButon_Click);
             // 
             // ReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 337);
+            this.ClientSize = new System.Drawing.Size(919, 345);
             this.Controls.Add(this.viewButon);
             this.Controls.Add(this.baoCaoDoanhThuGridView);
             this.Controls.Add(this.loaiPhongComboBox);
@@ -118,6 +119,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ReportForm";
             this.Text = "Báo Cáo Doanh Thu";
+            this.Load += new System.EventHandler(this.ReportForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.baoCaoDoanhThuGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

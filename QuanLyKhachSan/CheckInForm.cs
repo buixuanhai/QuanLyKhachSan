@@ -80,7 +80,7 @@ namespace QuanLyKhachSan
             loaiKhachComboBox.DataSource = Enum.GetValues(typeof(CustomerType));
 
             // Initialize Checkins table
-            List<CheckIn> CheckIns = CheckInRepo.Get().Where( c => c.Receipt == null).ToList();
+            List<CheckIn> CheckIns = CheckInRepo.Get().Where(c => c.Receipt == null).ToList();
             phieuThuePhongGridView.DataSource = CheckIns;
             phieuThuePhongGridView.Columns[0].HeaderText = "Id";
             phieuThuePhongGridView.Columns[0].Width = 40;
@@ -96,9 +96,10 @@ namespace QuanLyKhachSan
 
         private void themButton_Click(object sender, EventArgs e)
         {
-            Room Room = RoomRepo.Get(((Room)phongComboBox.SelectedItem).RoomId);
+            RoomViewModel RoomViewModel = (RoomViewModel)phongComboBox.SelectedItem;
+            Room Room = RoomRepo.Get(RoomViewModel.RoomId);
             string CustomerName = khachHangTextBox.Text;
-            CustomerType CustomerType = (CustomerType) loaiKhachComboBox.SelectedItem;
+            CustomerType CustomerType = (CustomerType)loaiKhachComboBox.SelectedItem;
             string CustomerIdentityNumber = CMNDTextBox.Text;
 
             try
@@ -120,7 +121,7 @@ namespace QuanLyKhachSan
             {
                 throw;
             }
-            
+
         }
 
         private void xoaButton_Click(object sender, EventArgs e)
@@ -184,7 +185,7 @@ namespace QuanLyKhachSan
             int CheckInId = (int)phieuThuePhongGridView.Rows[phieuThuePhongGridView.CurrentCell.RowIndex].Cells[0].Value;
             CheckIn CheckIn = CheckInRepo.Get(CheckInId);
             Room Room = CheckIn.Room;
-            decimal Total = ((int) Math.Ceiling((DateTime.Now - CheckIn.CheckInDate).TotalDays)) * Room.RoomType.Price;
+            decimal Total = ((int)Math.Ceiling((DateTime.Now - CheckIn.CheckInDate).TotalDays)) * Room.RoomType.Price;
 
             try
             {
