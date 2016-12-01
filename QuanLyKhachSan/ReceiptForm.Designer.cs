@@ -78,6 +78,7 @@
             this.searchReceiptButton.TabIndex = 19;
             this.searchReceiptButton.Text = "Tìm kiếm";
             this.searchReceiptButton.UseVisualStyleBackColor = true;
+            this.searchReceiptButton.Click += new System.EventHandler(this.searchReceiptButton_Click);
             // 
             // ReceiptForm
             // 
@@ -91,6 +92,7 @@
             this.Controls.Add(this.hoaDonGridView);
             this.Name = "ReceiptForm";
             this.Text = "Hóa Đơn Thanh Toán";
+            this.Load += new System.EventHandler(this.ReceiptForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
