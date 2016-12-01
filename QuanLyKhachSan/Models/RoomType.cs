@@ -21,6 +21,7 @@ namespace QuanLyKhachSan.Models
             return Name;
         }
 
+
     }
 
 
