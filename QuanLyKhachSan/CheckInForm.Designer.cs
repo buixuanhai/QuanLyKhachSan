@@ -86,7 +86,7 @@
             // 
             this.CMNDTextBox.Location = new System.Drawing.Point(101, 140);
             this.CMNDTextBox.Name = "CMNDTextBox";
-            this.CMNDTextBox.Size = new System.Drawing.Size(121, 20);
+            this.CMNDTextBox.Size = new System.Drawing.Size(198, 20);
             this.CMNDTextBox.TabIndex = 3;
             // 
             // loaiKhachComboBox
@@ -97,16 +97,16 @@
             "Nước ngoài"});
             this.loaiKhachComboBox.Location = new System.Drawing.Point(101, 104);
             this.loaiKhachComboBox.Name = "loaiKhachComboBox";
-            this.loaiKhachComboBox.Size = new System.Drawing.Size(121, 21);
+            this.loaiKhachComboBox.Size = new System.Drawing.Size(198, 21);
             this.loaiKhachComboBox.TabIndex = 2;
             this.loaiKhachComboBox.SelectedIndexChanged += new System.EventHandler(this.loaiKhachcomboBox_SelectedIndexChanged);
             // 
             // phieuThuePhongGridView
             // 
             this.phieuThuePhongGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.phieuThuePhongGridView.Location = new System.Drawing.Point(241, 27);
+            this.phieuThuePhongGridView.Location = new System.Drawing.Point(316, 27);
             this.phieuThuePhongGridView.Name = "phieuThuePhongGridView";
-            this.phieuThuePhongGridView.Size = new System.Drawing.Size(673, 208);
+            this.phieuThuePhongGridView.Size = new System.Drawing.Size(598, 208);
             this.phieuThuePhongGridView.TabIndex = 5;
             // 
             // themButton
@@ -153,7 +153,7 @@
             // 
             this.khachHangTextBox.Location = new System.Drawing.Point(101, 66);
             this.khachHangTextBox.Name = "khachHangTextBox";
-            this.khachHangTextBox.Size = new System.Drawing.Size(121, 20);
+            this.khachHangTextBox.Size = new System.Drawing.Size(198, 20);
             this.khachHangTextBox.TabIndex = 1;
             // 
             // phongComboBox
@@ -164,7 +164,7 @@
             "Nước ngoài"});
             this.phongComboBox.Location = new System.Drawing.Point(101, 28);
             this.phongComboBox.Name = "phongComboBox";
-            this.phongComboBox.Size = new System.Drawing.Size(121, 21);
+            this.phongComboBox.Size = new System.Drawing.Size(198, 21);
             this.phongComboBox.TabIndex = 0;
             // 
             // thanhToanButton

@@ -56,17 +56,30 @@ namespace QuanLyKhachSan
         private void LoadData()
         {
             // Initialize rooms
-            List<Room> Rooms = RoomRepo.Get().Where(r => r.RoomStatus == RoomStatus.Empty).ToList();
-            phongComboBox.DataSource = Rooms;
-            phongComboBox.DisplayMember = "RoomCode";
-            phongComboBox.ValueMember = "RoomId";
+            List<RoomViewModel> Rooms;
+            using (var context = new HotelContext())
+            {
+                Rooms = context.Rooms
+                    .Where(r => r.RoomStatus == RoomStatus.Empty)
+                    .Select(r => new RoomViewModel
+                    {
+                        RoomId = r.RoomId,
+                        RoomCode = r.RoomCode,
+                        RoomType = r.RoomType.Name,
+                        Price = r.RoomType.Price
+                    }).ToList();
+
+
+                phongComboBox.DataSource = Rooms;
+                phongComboBox.DisplayMember = "DisplayName";
+                phongComboBox.ValueMember = "RoomId";
+            }
             //phongComboBox.SelectedIndex = 0;
 
             // Initilize customer types
             loaiKhachComboBox.DataSource = Enum.GetValues(typeof(CustomerType));
 
             // Initialize Checkins table
-
             List<CheckIn> CheckIns = CheckInRepo.Get().Where( c => c.Receipt == null).ToList();
             phieuThuePhongGridView.DataSource = CheckIns;
             phieuThuePhongGridView.Columns[0].HeaderText = "Id";
